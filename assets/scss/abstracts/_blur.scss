@@ -1,0 +1,34 @@
+/* Blur */
+
+.blur{
+    z-index: 100;
+    height: 100vh;
+    filter: blur(8px);
+    transition: ease-in-out .4s;
+    pointer-events: none;
+    overflow-x: hidden;
+    // transform: scale(1.1); 
+}
+
+.blur::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 25px;
+    backdrop-filter: blur(8px); /* apply the blur */
+    pointer-events: none; /* make the overlay click-through */
+}
+
+.blur::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 25px;
+    backdrop-filter: blur(8px); /* apply the blur */
+    pointer-events: none; /* make the overlay click-through */
+}
+
+.blur-out{
+    filter: blur(0px);
+    transition: ease-in-out .6s;
+}

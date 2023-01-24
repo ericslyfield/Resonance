@@ -1,0 +1,30 @@
+#main-content{
+
+    h2.blog-title-text{
+        max-width: 100%;
+        height: fit-content;
+        font-family: 'Gothic A1', sans-serif;
+        grid-column: 2/12;
+        grid-row: 1/2;
+        // z-index: 100;
+        grid-template-columns: minmax(min-content, 100%);
+    }
+
+    .blog-hero-image{
+        grid-column: 2 / 12;
+        // z-index: 50;
+        padding: 0 0 0 0;
+    }
+
+    .blog-main-text{
+        grid-row: 3/4;
+        position: relative;
+        grid-column: 2/12;
+        font-family: 'Courier Prime', monospace;
+        font-size: .75rem;
+        grid-template-columns: minmax(min-content, 300px);
+        padding: 10px 0 10px 0;
+
+    }
+
+}

@@ -1,0 +1,59 @@
+/*************
+* Navigation *
+**************/
+
+
+#navigation{
+    display: flex;
+    flex: 1 1 50%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    margin: 0;
+    // padding: 25px;
+    // z-index: 25;
+    line-height: 1;
+    justify-content: space-between;
+}
+
+div#floating-menu{
+    // float: right;
+    // text-align: right;
+    display: none;
+
+    ul{
+        padding: 0 10px 0 10px;
+        // position: relative;
+        // flex-direction: row;
+        // list-style: none;
+        // margin: 0 auto;
+        // display: flex;
+        // float: right;
+
+        // li{
+        //     padding: 5px;
+        // }
+
+        a {
+            display: flex;
+            flex-direction: row;
+        }
+
+        /* WP Active Menu item */
+
+        .current-menu-item{
+            text-decoration: line-through;
+            color: white;
+        }
+    }
+}
+
+/* Close Button */
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }

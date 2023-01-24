@@ -1,0 +1,104 @@
+/*********************
+* Font Styling Rules *
+**********************/
+
+.up{
+    text-transform: uppercase;
+}
+
+.low{
+    text-transform: lowercase;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.bold{
+    font-weight: bold !important;
+}
+
+.small{
+    font-size: small;
+}
+
+.medium{
+    font-size: medium;
+}
+
+.large{
+    font-size: large;
+}
+
+.x-large{
+    font-size: x-large;
+}
+
+.xx-large{
+    font-size: xx-large;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+h3{
+    font-size: .75rem;
+}
+
+h1, h2{
+    font-family: 'Gothic A1', sans-serif;
+}
+
+h3, h4{
+    font-family: 'Gothic A1', sans-serif;
+}
+
+h5{
+    font-family: 'Courier Prime', monospace;
+    font-weight: 500;
+    line-height: 14px;
+    font-size: small;
+}
+
+h6{
+    font-family: 'Courier Prime', monospace;
+    font-weight: 400;
+    line-height: 14px;
+    font-size: small;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+.body-text{
+    font-family: 'Courier Prime', monospace;
+    font-size: small;
+    line-height: 14px;
+}
+
+.body-text-alt{
+    font-family: 'Courier Prime', monospace;
+    font-size: x-small;
+    line-height: 14px;
+}
+
+.dotted-break{
+    grid-column: 2 / 22;
+}
+
+.blog-metadata{
+    grid-column: 2 / 4;
+}
+
+.blog-thumbnail{
+    grid-column: 8 / 12;
+}

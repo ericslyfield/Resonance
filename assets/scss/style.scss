@@ -1,0 +1,195 @@
+/*  
+Theme Name: Resonance
+Theme URI: https://ericslyfield.com/themes/ericslyfieldcom
+Description: A Portfolio Theme.
+Author: Eric Slyfield
+Author URI: https://ericslyfield.com
+Template: Null
+Version: 1.0.0
+License: GNU General Public License v2 or Later
+License URI: http://www.gnu.org/licenses/gpi-2.0.html
+Tags: blog, portfolio, minimal,
+*/
+
+
+/********************
+* Table of Contents *
+********************/
+
+/*
+
+1. Abstracts
+2. Base
+3. Components
+4. Layout
+5. Pages
+6. Vendors
+
+*/
+
+/********************
+* SCSS Dependencies *
+********************/
+
+// Loaads Index
+
+@use "abstracts/index" as *;
+
+// Components
+
+// Layouts
+
+@use './layout/navigation';
+
+// Pages
+
+@use "./pages/landing";
+@use "./pages/about";
+@use "./pages/links";
+@use "./pages/blog";
+@use "./pages/format";
+
+// Vendors
+
+
+/******************
+* Utility Classes *
+*******************/
+
+a{
+    color: $forest;
+}
+
+spacer-before{
+    height: 50px;
+    grid-column: 1/13;
+}
+
+spacer-after{
+    height: 50px;
+    grid-column: 1/13;
+}
+
+h1, h2, h3, h4, h5, h6{
+    line-height: 1em;
+}
+
+.body-text{
+    h5, h6{
+        color: $forest;
+    }
+}
+
+#navigation{
+    padding: 15px;
+}
+
+#navigation, #main-content{
+    background: $pine;
+    margin-bottom: -1px;
+
+    h1, h2, h3, h4, h5, h6{
+        color: $eggshell;
+        a{
+            color: $eggshell;
+        }
+        a:hover{
+            color: $sunlight;
+        }
+    }
+}
+
+footer{
+    background: $pine;
+    color: $eggshell;
+}
+
+.body-text{
+    color: $eggshell;
+}
+
+.body-text-alt{
+    color: $concrete;
+}
+
+* > .links-body {
+    scrollbar-width: auto;
+  }
+
+
+* > .links-body::-webkit-scrollbar-track {
+    background: #6e847a;
+    border: 1px solid $pine;
+}
+
+* > .clients-body::-webkit-scrollbar-track {
+    background: #6e847a;
+    border: 1px solid $pine;
+}
+
+.button-main{
+    color: $eggshell;
+    border: solid $sunlight 3px;
+}
+
+.button-ghost{
+    color: $shadow;
+    border: solid $sunlight 3px;
+}
+
+.line-break {
+    width: 50%;
+    // margin-top: 135px !important;
+    margin-bottom: 40px !important;
+}
+
+//
+
+article{
+    line-height: .85rem;
+
+    p{
+        line-height: 1;
+    }
+}
+
+img{
+    height: auto;
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+img.alignright {
+    float:right; 
+    margin:0 0 1em 1em
+}
+
+img.alignleft {
+    float:left; 
+    margin:0 1em 1em 0
+}
+
+img.aligncenter {
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto
+}
+
+a img.alignright {
+    float:right; 
+    margin:0 0 1em 1em
+}
+
+a img.alignleft {
+    float:left; 
+    margin:0 1em 1em 0
+}
+
+a img.aligncenter {
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto
+}
+
+//

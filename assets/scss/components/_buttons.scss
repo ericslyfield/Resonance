@@ -1,0 +1,58 @@
+/***********************
+* Button Styling Rules *
+************************/
+
+.button-main{
+    font-family: 'Courier Prime', monospace;
+    font-weight: 0;
+    font-size: 18px;
+    // color: $shadow;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 10px 25px;
+    // border: solid colors.$shadow 3px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 5px;
+    transition : 1000ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    }
+    
+.button-main:hover{
+    
+    transition : 1000ms;
+    padding: 10px 30px;
+    transform : translateY(-0px);
+    background-color: rgba(255, 255, 255, 0);
+    // color: $pine;
+    // border: solid 3px $pine;
+}
+
+.button-ghost{
+    font-family: 'Courier Prime', monospace;
+    font-weight: 0;
+    font-size: 18px;
+    // color: $shadow;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 10px 25px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 5px;
+    transition : 1000ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button-ghost:hover{
+    
+    transition : 1000ms;
+    padding: 10px 30px;
+    transform : translateY(-0px);
+    background-color: rgba(255, 255, 255, 0);
+    // color: $pine;
+    // border: solid 3px $pine;
+}

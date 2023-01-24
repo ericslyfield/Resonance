@@ -1,0 +1,93 @@
+.breathe{
+    padding: 100px 0 100px 0;
+}
+
+#main-content{
+
+    .blog-title-text{
+        grid-column: 5 / 12;
+    }
+
+    .blog-thumbnail{
+        grid-column: 2 / 12;
+    }
+
+    .body-text-align{
+        grid-column: 5 / 12;
+    }
+
+    .audio-content{
+        grid-column: 2 / 12;
+    }
+
+    .music-container{
+        background-color: rgb(0 0 0 / 10%);
+    }
+
+    .wp-block-bpmp-mp3-player #cover-box{
+        bottom: 3rem;
+    }
+
+    .image-content{
+        grid-column: 2 / 12;
+
+        .wp-caption{
+            display: block;
+            // max-width: 77vw;
+        }
+
+        .aligncenter{
+            grid-column: 2 / 12;
+        }
+    }
+
+    // Links
+
+    .link-title-text{
+        grid-column: 5 / 12;
+    }
+
+    // Aside
+
+    .aside-body-text{
+        grid-column: 5 / 12;
+    }
+
+    // Quote
+
+    .quote-text-align{
+        grid-column: 5 / 12;
+    }
+
+    .quote-author{
+        grid-column: 8 / 12;
+    }
+
+    h2.blog-title-text{
+        max-width: 100%;
+        height: fit-content;
+        font-family: 'Gothic A1', sans-serif;
+        grid-column: 2/12;
+        grid-row: 1/2;
+        // z-index: 100;
+        grid-template-columns: minmax(min-content, 100%);
+    }
+
+    .blog-hero-image{
+        grid-column: 2 / 12;
+        // z-index: 50;
+        padding: 0 0 0 0;
+    }
+
+    .blog-main-text{
+        grid-row: 3/4;
+        position: relative;
+        grid-column: 2/12;
+        font-family: 'Courier Prime', monospace;
+        font-size: .75rem;
+        grid-template-columns: minmax(min-content, 300px);
+        padding: 10px 0 10px 0;
+
+    }
+
+}
