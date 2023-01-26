@@ -20,7 +20,7 @@ class Styling {
         //Register Scripts
         wp_register_script( 'mobile-menu', get_template_directory_uri() . '/assets/js/mobilemenu.js', [], filemtime( get_template_directory() . '/assets/js/mobilemenu.js' ));
         wp_register_script( 'clock', get_template_directory_uri() . '/assets/js/clock.js', [], filemtime( get_template_directory() . '/assets/js/clock.js' ));
-        wp_register_script( 'bootstrap-js', get_template_directory_uri() . '/assets/library/js/bootstrap.min.js', [ 'jquery' ], false, true);
+        // wp_register_script( 'bootstrap-js', get_template_directory_uri() . '/assets/library/js/bootstrap/bootstrap.min.js', [ 'jquery' ], false, true);
         wp_register_script( 'blotter', get_template_directory_uri() . '/assets/library/js/blotter.min.js', [ 'jquery' ], false, true);
         wp_register_script( 'scripts', get_template_directory_uri() . '/assets/js/scripts.js', [], filemtime( get_template_directory() . '/assets/js/scripts.js' ));
         wp_register_script( 'navigation', get_template_directory_uri() . '/assets/js/navigation.js', [], filemtime( get_template_directory() . '/assets/js/navigation.js' ));
