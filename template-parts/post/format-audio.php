@@ -25,37 +25,37 @@
 
 // Query All Audio Posts in Context
 
-$args = array
-(
-	'post_type' => 'attachment',
-	'post_mime_type' => 'audio',
-	'numberposts' => -1
-);
+// $args = array
+// (
+// 	'post_type' => 'attachment',
+// 	'post_mime_type' => 'audio',
+// 	'numberposts' => -1
+// );
 
-$audiofiles = get_posts($args);
+// $audiofiles = get_posts($args);
 	
-	foreach ($audiofiles as $file)
-	{
+// 	foreach ($audiofiles as $file)
+// 	{
 
-		$audioURL = $file->guid;
+// 		$audioURL = $file->guid;
 
-		// echo json_encode(array("audioURL" => $audioURL));
+// 		// echo json_encode(array("audioURL" => $audioURL));
 
-		// $audioURL = print_r($file->guid);
-		echo '<br>';
-		echo '<br>';
+// 		// $audioURL = print_r($file->guid);
+// 		echo '<br>';
+// 		echo '<br>';
 
-		// print_r($file->guid);
+// 		// print_r($file->guid);
 
-		// $url = wp_get_attachment_url($file->ID);
-		echo '<div id="waveform">'; // Wrap block in "waveform" ID
-		echo $audioURL . ' '; // URL
-		echo '</div>'; // Close div
-		echo '<br>';
-		echo '<i class="non-play-button ph-play-fill"></i>';
-		echo '<br>';
-		echo '<br>';
-	}
+// 		// $url = wp_get_attachment_url($file->ID);
+// 		echo '<div id="waveform">'; // Wrap block in "waveform" ID
+// 		echo $audioURL . ' '; // URL
+// 		echo '</div>'; // Close div
+// 		echo '<br>';
+// 		echo '<i class="non-play-button ph-play-fill"></i>';
+// 		echo '<br>';
+// 		echo '<br>';
+// 	}
 
 ?>
 

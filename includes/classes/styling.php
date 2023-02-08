@@ -27,7 +27,7 @@ class Styling {
         wp_register_script( 'audio', get_template_directory_uri() . '/assets/js/audio.js', [], filemtime( get_template_directory() . '/assets/js/audio.js' ));
         
         // Wavesurfer
-	    wp_enqueue_script('wavesurfer', get_template_directory_uri() . '/assets/js/wavesurfer.js', '', 2, true);
+	    wp_enqueue_script('wavesurfer', get_template_directory_uri() . '/assets/js/waveform.js', '', 2, true);
 
         //Enqueue Scripts
 
