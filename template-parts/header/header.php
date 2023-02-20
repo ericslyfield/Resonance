@@ -3,7 +3,7 @@
 <div id="home" class="home-icon" title="home icon">
     <a href="<?php bloginfo('url'); ?>"><i class="ph-house-bold x-large"></i></a>
 </div>
-    <a href="javascript:void(0)"><i id="toggle" class="ph-list-bold toggle x-large" onclick="showMenu()"></i></a>
+    <a href="javascript:void(0)"><i id="modal-open" class="ph-list-bold toggle x-large"></i></a>
 </nav>
 
 <div id="floating-menu">
@@ -16,11 +16,11 @@
         </li>
     </ul>
 </div>
+ 
 
+<dialog id="modal" class="x-large bold hide full-screen centered">
 
-<dialog id="modal-menu" class="x-large bold" style="display: none;">
-
-    <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+    <a href="javascript:void(0)" id="modal-close">&times;</a>
 
     <?php wp_nav_menu(
         [ 'theme_location'  => 'mobile-menu',

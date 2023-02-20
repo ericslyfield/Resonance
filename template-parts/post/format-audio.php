@@ -48,9 +48,10 @@
 // 		// print_r($file->guid);
 
 // 		// $url = wp_get_attachment_url($file->ID);
-// 		echo '<div id="waveform">'; // Wrap block in "waveform" ID
-// 		echo $audioURL . ' '; // URL
-// 		echo '</div>'; // Close div
+		echo '<button>Get Audio Link</button>';
+		echo '<div id="waveform">'; // Wrap block in "waveform" ID
+// 		echo $audioURL . ' '; // URL 
+		echo '</div>'; // Close div
 // 		echo '<br>';
 // 		echo '<i class="non-play-button ph-play-fill"></i>';
 // 		echo '<br>';

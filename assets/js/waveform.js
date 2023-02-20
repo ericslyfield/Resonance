@@ -1,55 +1,64 @@
-jQuery(document).ready(function() {
+document.addEventListener("DOMContentLoaded", () => {
+    
+// Button to Test Logs
+let button = document.querySelector('button');
 
-function findURL(audioURL){
-    let audioURL = [];
+button.addEventListener('click', () => {
+    console.log('Audio Button Cicked!');
+  });
 
-};
+  // Run Function
+// fetchURL().then(() => console.log('Ready to Run...'));
 
-async function getURL(){
+// Fetch URL Logic
+async function fetchURL(audioURL){
+
     let headersList = {
         "Accept": "*/*",
-        "User-Agent": "Thunder Client c/o Nonarchival"
-       }
-       
-       let response = await fetch("https://resonance.local/wp-json/wp/v2/media?_fields=link&media_type=audio", { 
-         method: "GET",
-         headers: headersList
-       });
-       
-       let data = await response.text();
-       console.log(data);
-}
+        "User-Agent": "Thunder Client c/o Nonarchival",
+    }
 
-function waveformOptions(){
-
-    var wavesurfer = WaveSurfer.create({
-        container: '#waveform',
-        waveColor: '#D9DCFF',
-        progressColor: '#333333',
-        cursorColor: '#ffffff',
-        barWidth:4, barRadius:3,
-        cursorWidth:1, height:50,
-        barGap:3
-    });    
-
-}
+    let array = await fetch("https://resonance.local/wp-json/wp/v2/media?media_type=audio", { 
+        method: "GET",
+        headers: headersList,
+    }); 
 
 
-wavesurfer.load('/assets/audio/clap.mp3');
 
-var audioURL = 'http://resonance.local/wp/v2/media?media_type=audio';
+    
+    audioURL = await array.json();
 
-});
+    async function iterate(){
 
-// });
+        let i;
 
-// wavesurfer.load("./template-parts/post/format-audio.php?url=url");
+        for (let i = 0; i <= 101; i++) {
+            console.log(audioURL[i].source_url) + "<br>";
+            let url = audioURL[i].source_url;
+            
+          }
+    }
 
-// console.log(' Wavesurver loaded...')
-
-// wavesurfer.zoom(75);
-
-// console.log(' Wavesurver zoomed...')
+    iterateURL = iterate( console.log("Is iterating...") );
 
 
-// });
+        // var wavesurfer = [iterateURL];
+
+        // var wavesurfer = WaveSurfer.create({
+        //             container: '#waveform',
+        //             waveColor: '#D9DCFF',
+        //             progressColor: '#333333',
+        //             cursorColor: '#ffffff',
+        //             barWidth: 4,
+        //             barRadius: 3,
+        //             cursorWidth: 1,
+        //             height: 50,
+        //             barGap: 3
+        //         });
+           
+        //     console.log(iterateURL);
+        //     console.log("Iterated through URL's")  
+        //     // wavesurfer( console.log("Iterated") );
+    }
+
+})

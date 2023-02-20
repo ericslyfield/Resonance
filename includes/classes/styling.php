@@ -1,8 +1,10 @@
 <?php
 class Styling {
     public function Styling(){ 
-        
-        wp_register_style( 'phosphor-icons', 'https://unpkg.com/phosphor-icons' );
+
+        // Enqueue jQuery
+        wp_enqueue_script( 'jquery' );
+    
         // wp_deregister_style( 'dashicons' ); 
 
         // Enqueue AJAX
@@ -18,7 +20,7 @@ class Styling {
         // wp_register_style('bootstrap-css', get_template_directory_uri() . '/assets/library/css/bootstrap.min.css', [], null, 'all' );
         
         //Register Scripts
-        wp_register_script( 'mobile-menu', get_template_directory_uri() . '/assets/js/mobilemenu.js', [], filemtime( get_template_directory() . '/assets/js/mobilemenu.js' ));
+        wp_register_script( 'modal', get_template_directory_uri() . '/assets/js/modal.js', [], filemtime( get_template_directory() . '/assets/js/modal.js' ));
         wp_register_script( 'clock', get_template_directory_uri() . '/assets/js/clock.js', [], filemtime( get_template_directory() . '/assets/js/clock.js' ));
         // wp_register_script( 'bootstrap-js', get_template_directory_uri() . '/assets/library/js/bootstrap/bootstrap.min.js', [ 'jquery' ], false, true);
         wp_register_script( 'blotter', get_template_directory_uri() . '/assets/library/js/blotter.min.js', [ 'jquery' ], false, true);
@@ -29,22 +31,25 @@ class Styling {
         // Wavesurfer
 	    wp_enqueue_script('wavesurfer', get_template_directory_uri() . '/assets/js/waveform.js', '', 2, true);
 
-        //Enqueue Scripts
-
-        // wp_enqueue_script( 'navigation' );
-        // wp_enqueue_script( 'ajax' );
-        wp_enqueue_script( 'wavesurfer' );
-        wp_enqueue_script( 'mobile-menu' );
-        // wp_enqueue_script( 'bootstrap-js' );
-        // wp_enqueue_script( 'clock' );
-        // wp_enqueue_script( 'blotter' );
-        wp_enqueue_script( 'scripts' );
-        // wp_enqueue_script( 'audio' );
+      
 
         // Enqueue Styles
         wp_enqueue_style( 'stylesheet' );
-        wp_enqueue_style( 'phosphor-icons' );
         // wp_enqueue_style( 'mediaplayer' );
-        // wp_enqueue_style( 'bootstrap-css' );
+        // wp_enqueue_style( 'bootstrap-css' );  
+        
+        
+        //Enqueue Scripts
+        
+        wp_enqueue_script( 'scripts' );
+        // wp_enqueue_script( 'navigation' );
+        // wp_enqueue_script( 'ajax' );
+        wp_enqueue_script( 'wavesurfer' );
+        wp_enqueue_script( 'modal' );
+        // wp_enqueue_script( 'bootstrap-js' );
+        // wp_enqueue_script( 'clock' );
+        // wp_enqueue_script( 'blotter' );
+  
+        // wp_enqueue_script( 'audio' );
         }
 }

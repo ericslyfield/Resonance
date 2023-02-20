@@ -14,7 +14,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="https://unpkg.com/wavesurfer.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.4.0/wavesurfer.min.js"></script>
+    <script async src="https://unpkg.com/phosphor-icons"></script>
 
     <?php wp_head(); ?>
 </head>
