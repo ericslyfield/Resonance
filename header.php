@@ -17,6 +17,8 @@
     <script async src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.4.0/wavesurfer.min.js"></script>
     <script async src="https://unpkg.com/phosphor-icons"></script>
 
+    <?php header('Access-Control-Allow-Origin: *'); ?>
+
     <?php wp_head(); ?>
 </head>
 

@@ -1,64 +1,76 @@
 document.addEventListener("DOMContentLoaded", () => {
     
-// Button to Test Logs
-let button = document.querySelector('button');
-
-button.addEventListener('click', () => {
-    console.log('Audio Button Cicked!');
-  });
-
   // Run Function
 // fetchURL().then(() => console.log('Ready to Run...'));
 
 // Fetch URL Logic
-async function fetchURL(audioURL){
+async function fetchURL(){
 
     let headersList = {
         "Accept": "*/*",
         "User-Agent": "Thunder Client c/o Nonarchival",
     }
 
-    let array = await fetch("https://resonance.local/wp-json/wp/v2/media?media_type=audio", { 
+    let array = await fetch("http://resonance.local/wp-json/wp/v2/media?media_type=audio", { 
         method: "GET",
         headers: headersList,
-    }); 
-
-
-
+    });
     
     audioURL = await array.json();
 
     async function iterate(){
 
-        let i;
+        let link = [];
 
-        for (let i = 0; i <= 101; i++) {
-            console.log(audioURL[i].source_url) + "<br>";
-            let url = audioURL[i].source_url;
+        for (const link in audioURL) {
+            // console.log(audioURL[link]?.source_url) + "<br>";
+            let url = [[audioURL[link]?.source_url]];
+
+            const contentArea = document.getElementById('waveform');
+            const audioFragment = document.createDocumentFragment();
+
+            let array = [[url]]
+
+            for (var wavesurfer in url) {
+
+               
+            }
+
+            var wavesurfer = WaveSurfer.create({
+                container: '.waveform',
+                waveColor: '#FFF',
+                progressColor: '#CCC333',
+                height: 100,
+                barWidth: 3,
+                barRadius: 4
+            });
+
+            console.log(array);
+    
+            wavesurfer.load(url);
+
+                // Button to Test Logs
+let button = document.querySelector('button');
+
+button.addEventListener('click', () => {
+    wavesurfer.play();
+    console.log('Audio Button Cicked!');
+});
+
+
             
-          }
+
+            console.log('-----')
+        
+
+}
+
+}
+
+    iterateURL = iterate();
+    
     }
 
-    iterateURL = iterate( console.log("Is iterating...") );
-
-
-        // var wavesurfer = [iterateURL];
-
-        // var wavesurfer = WaveSurfer.create({
-        //             container: '#waveform',
-        //             waveColor: '#D9DCFF',
-        //             progressColor: '#333333',
-        //             cursorColor: '#ffffff',
-        //             barWidth: 4,
-        //             barRadius: 3,
-        //             cursorWidth: 1,
-        //             height: 50,
-        //             barGap: 3
-        //         });
-           
-        //     console.log(iterateURL);
-        //     console.log("Iterated through URL's")  
-        //     // wavesurfer( console.log("Iterated") );
-    }
+ fetchURL();
 
 })

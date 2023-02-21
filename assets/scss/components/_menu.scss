@@ -27,7 +27,7 @@ dialog#modal-menu {
 
     // visibility: hidden;
 
-    mobile-menu{
+.mobile-menu{
         display: grid;
         place-items: center;
         align-items: center;
@@ -70,4 +70,13 @@ li.menu-item{
     }
 }
 
+}
+
+#modal{
+    z-index: 1;
+    overflow: hidden;
+}
+
+#modal:not([open]) { 
+    display: none 
 }

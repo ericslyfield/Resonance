@@ -20,15 +20,20 @@ remove_filter( 'the_excerpt', 'wpautop' );
 
 function wrap_audio_in_waveform( $block_content, $block ) {
 	if ( $block['blockName'] === 'core/audio' ) {
-		$content = '<div id="waveform" class="wp-block-audio">';
+		$content = '<div id="wp-block-audio" class="wp-block-audio">';
 		$content .= $block;
 		$content .= '</div>';
 		return $content;
 	}
+	
     return $block_content;
 }
 
 add_filter('render_block', 'wrap_audio_in_waveform', 10, 2);
+
+// CORS
+
+
 
 ?>
 
