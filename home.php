@@ -7,7 +7,6 @@
 ?>
 
 <header>
-    <?php header('Access-Control-Allow-Origin: *'); ?>
     <?php get_header(); ?>
 </header>
 

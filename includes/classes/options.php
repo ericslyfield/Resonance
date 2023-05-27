@@ -1,6 +1,6 @@
  <?php
 class Options {
-   public function Options() {
+   public function __construct() {
     
        // Menu Support
        add_theme_support('menus');

@@ -4,56 +4,56 @@
   font-family: "Gothic A1";
   font-style: normal;
   font-weight: 400;
-  src: local("../fonts/gothic-a1-v13-latin-regular.woff2"), url("../fonts/gothic-a1-v13-latin-regular.woff2") format("woff2"), url("../fonts/gothic-a1-v13-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local("../fonts/gothic-a1-v13-latin-regular.woff2"), url("./fonts/gothic-a1-v13-latin-regular.woff2") format("woff2"), url("./fonts/gothic-a1-v13-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* gothic-a1-600 - latin */
 @font-face {
   font-family: "Gothic A1";
   font-style: normal;
   font-weight: 600;
-  src: local(""), url("../fonts/gothic-a1-v13-latin-600.woff2") format("woff2"), url("../fonts/gothic-a1-v13-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("./fonts/gothic-a1-v13-latin-600.woff2") format("woff2"), url("./fonts/gothic-a1-v13-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* gothic-a1-700 - latin */
 @font-face {
   font-family: "Gothic A1";
   font-style: normal;
   font-weight: 700;
-  src: local(""), url("../fonts/gothic-a1-v13-latin-700.woff2") format("woff2"), url("../fonts/gothic-a1-v13-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("./fonts/gothic-a1-v13-latin-700.woff2") format("woff2"), url("./fonts/gothic-a1-v13-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* gothic-a1-900 - latin */
 @font-face {
   font-family: "Gothic A1";
   font-style: normal;
   font-weight: 900;
-  src: local(""), url("../fonts/gothic-a1-v13-latin-900.woff2") format("woff2"), url("../fonts/gothic-a1-v13-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("./fonts/gothic-a1-v13-latin-900.woff2") format("woff2"), url("./fonts/gothic-a1-v13-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* courier-prime-regular - latin */
 @font-face {
   font-family: "Courier Prime";
   font-style: normal;
   font-weight: 400;
-  src: local(""), url("../fonts/courier-prime-v7-latin-regular.woff2") format("woff2"), url("../fonts/courier-prime-v7-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("./fonts/courier-prime-v7-latin-regular.woff2") format("woff2"), url("./fonts/courier-prime-v7-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* courier-prime-italic - latin */
 @font-face {
   font-family: "Courier Prime";
   font-style: italic;
   font-weight: 400;
-  src: local(""), url("../fonts/courier-prime-v7-latin-italic.woff2") format("woff2"), url("../fonts/courier-prime-v7-latin-italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("./fonts/courier-prime-v7-latin-italic.woff2") format("woff2"), url("./fonts/courier-prime-v7-latin-italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* courier-prime-700 - latin */
 @font-face {
   font-family: "Courier Prime";
   font-style: normal;
   font-weight: 700;
-  src: local(""), url("../fonts/courier-prime-v7-latin-700.woff2") format("woff2"), url("../fonts/courier-prime-v7-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("./fonts/courier-prime-v7-latin-700.woff2") format("woff2"), url("./fonts/courier-prime-v7-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* courier-prime-700italic - latin */
 @font-face {
   font-family: "Courier Prime";
   font-style: italic;
   font-weight: 700;
-  src: local(""), url("../fonts/courier-prime-v7-latin-700italic.woff2") format("woff2"), url("../fonts/courier-prime-v7-latin-700italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("./fonts/courier-prime-v7-latin-700italic.woff2") format("woff2"), url("./fonts/courier-prime-v7-latin-700italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /**
  * Resonance Custom Colour Codes
@@ -714,13 +714,13 @@ div#floating-menu ul .current-menu-item {
 }
 
 /*  
-Theme Name: Resonance
+Theme Name: Resonance 2023
 Theme URI: https://ericslyfield.com/themes/ericslyfieldcom
-Description: A Portfolio Theme.
+Description: A Portfolio Theme...
 Author: Eric Slyfield
 Author URI: https://ericslyfield.com
 Template: Null
-Version: 1.0.0
+Version: 1.0.1
 License: GNU General Public License v2 or Later
 License URI: http://www.gnu.org/licenses/gpi-2.0.html
 Tags: blog, portfolio, minimal,
@@ -782,10 +782,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 #navigation h1 a:hover, #navigation h2 a:hover, #navigation h3 a:hover, #navigation h4 a:hover, #navigation h5 a:hover, #navigation h6 a:hover, #main-content h1 a:hover, #main-content h2 a:hover, #main-content h3 a:hover, #main-content h4 a:hover, #main-content h5 a:hover, #main-content h6 a:hover {
   color: #E2D45E;
-}
-
-#wp-block-audio, .wp-block-audio {
-  display: none;
 }
 
 footer {

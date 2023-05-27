@@ -1,9 +1,9 @@
 <?php
 class Styling {
-    public function Styling(){ 
+    public function __construct(){ 
 
         // Enqueue jQuery
-        wp_enqueue_script( 'jquery' );
+        wp_enqueue_scripts( 'jquery' );
     
         // wp_deregister_style( 'dashicons' ); 
 

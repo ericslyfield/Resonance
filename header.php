@@ -6,6 +6,8 @@
 */
 ?>
 
+<?php get_template_part( 'template-parts/header/header' )?>
+
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 
@@ -17,12 +19,12 @@
     <script async src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.4.0/wavesurfer.min.js"></script>
     <script async src="https://unpkg.com/phosphor-icons"></script>
 
-    <?php header('Access-Control-Allow-Origin: *'); ?>
+    
 
     <?php wp_head(); ?>
 </head>
 
-<?php get_template_part( 'template-parts/header/header' )?>
+
 
 <body <?php body_class(); ?> >
 

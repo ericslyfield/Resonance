@@ -1,3 +1,5 @@
 assets/fonts/
 assets/audio/
 package.json
+*.woff
+*.woff2
