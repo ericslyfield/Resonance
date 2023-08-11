@@ -1,4 +1,5 @@
 @use "sass:math";
+@use "breakpoints" as *;
 
 // Base Layout
 
@@ -29,46 +30,47 @@
     flex-flow: row wrap;
 }
 
-$number-of-grid-columns: 12;
+
+
+$grid-columns: 12;
 
 // Column Classes
 
-@mixin mobile{
-    @for $i from 1 through $number-of-grid-columns {
+@include mobile{
+    @for $i from 1 through $grid-columns {
+        $width: math.div($i * 100%, $grid-columns);
         .span-#{$i}-mobile {
-            display: grid;
-            grid-template-columns: 12 1fr;
-            box-sizing: border-box;
-            flex-grow: 0;
-            width: math.div($i * 100%, $number-of-grid-columns);
+            flex-basis: $width;
+            max-width: $width;
         }
     }
 }
 
-@mixin tablet-portrait{
-    @for $i from 1 through $number-of-grid-columns {
-        .span-#{$i}-tablet-portrait {
-            box-sizing: border-box;
-            flex-grow: 0;
-            width: math.div($i * 100%, $number-of-grid-columns);
+@include tablet{
+    @for $i from 1 through $grid-columns {
+        $width: math.div($i * 100%, $grid-columns);
+        .span-#{$i}-tablet {
+            flex-basis: $width;
+            max-width: $width;
         }
     }
 }
-@mixin tablet-landscape{
-    @for $i from 1 through $number-of-grid-columns {
-        .span-#{$i}-tablet-landscape {
-            box-sizing: border-box;
-            flex-grow: 0;
-            width: math.div($i * 100%, $number-of-grid-columns);
+@include tablet-wide{
+    @for $i from 1 through $grid-columns {
+        $width: math.div($i * 100%, $grid-columns);
+        .span-#{$i}-tablet-wide {
+            flex-basis: $width;
+            max-width: $width;
         }
     }
 }
-@mixin desktop{
-    @for $i from 1 through $number-of-grid-columns {
+@include desktop{
+    @for $i from 1 through $grid-columns {
+        $width: math.div($i * 100%, $grid-columns);
         .span-#{$i}-desktop {
-            box-sizing: border-box;
-            flex-grow: 0;
-            width: math.div($i * 100%, $number-of-grid-columns);
+            color: aqua;
+            flex-basis: $width;
+            max-width: $width;
         }
     }
 

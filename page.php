@@ -7,16 +7,16 @@
 */
 ?>
 
-<header> 
-    <?php get_header(); ?>
-</header>
+
+<?php get_header(); ?>
+
 
 <main id="main-content" class="grid">
     <?php 
-        if ( is_page( 'Links' ) ){
+        if ( ! is_page( 'Links' ) ){
             get_template_part( 'template-parts/page/links' );
         } 
-        elseif ( is_page('About') ){
+        elseif ( ! is_page('About') ){
             get_template_part( 'template-parts/page/about' );
         } 
         else {
@@ -25,7 +25,5 @@
     ?>
 </main>
 
-<footer>
-    <!-- Loads Footer -->
-    <?php get_footer();?>
-</footer>
+
+<?php get_footer();?>

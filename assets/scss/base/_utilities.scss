@@ -74,31 +74,6 @@ h6{
     font-size: small;
 }
 
-
 a{
     text-decoration: none;
-}
-
-.body-text{
-    font-family: 'Courier Prime', monospace;
-    font-size: small;
-    line-height: 14px;
-}
-
-.body-text-alt{
-    font-family: 'Courier Prime', monospace;
-    font-size: x-small;
-    line-height: 14px;
-}
-
-.dotted-break{
-    grid-column: 2 / 22;
-}
-
-.blog-metadata{
-    grid-column: 2 / 4;
-}
-
-.blog-thumbnail{
-    grid-column: 8 / 12;
 }

@@ -1,0 +1,81 @@
+@use '../abstracts/variables' as *;
+
+/*************
+* Navigation *
+**************/
+
+#navigation{
+    display: flex;
+    flex: 1 1 50%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    margin: 0;
+    line-height: 1;
+    padding: 50px 0px;
+    justify-content: space-between;
+
+    .site-description{
+        color: bisque;
+        max-width: 150px;
+    }
+
+}
+
+#navigation, 
+#main-content{
+    background: rgba(0,0,0,0.3);
+    margin-bottom: 0px;
+
+    h1, h2, h3, h4, h5, h6, cite{
+        color: $eggshell;
+        a{
+            color: $eggshell;
+        }
+        a:hover{
+            color: $sunlight;
+        }
+    }
+}
+
+div#floating-menu{
+    // float: right;
+    // text-align: right;
+    display: none;
+
+    ul{
+        padding: 0 10px 0 10px;
+        // position: relative;
+        // flex-direction: row;
+        // list-style: none;
+        // margin: 0 auto;
+        // display: flex;
+        // float: right;
+
+        // li{
+        //     padding: 5px;
+        // }
+
+        a {
+            display: flex;
+            flex-direction: row;
+        }
+
+        /* WP Active Menu item */
+
+        .current-menu-item{
+            text-decoration: line-through;
+            color: white;
+        }
+    }
+}
+
+/* Close Button */
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: relative;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }

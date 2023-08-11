@@ -3,3 +3,4 @@ assets/audio/
 package.json
 *.woff
 *.woff2
+assets/libraries/.DS_Store

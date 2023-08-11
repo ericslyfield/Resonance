@@ -1,11 +1,9 @@
-// Breakpoints: Mobile, Tablet [Portrait & Landscape], Desktop
-
 @mixin break($screen) {
-    @if $size == mobile {
+      @if $size == mobile {
       @media (max-width: 599px) { @content; }
-    } @else if $size == tablet-portrait {
+    } @else if $size == tablet {
       @media (min-width: 600px) { @content; }
-    } @else if $size == tablet-landscape {
+    } @else if $size == tablet-wide {
       @media (min-width: 900px) { @content; }
     } @else if $size == desktop {
       @media (min-width: 1200px) { @content; }

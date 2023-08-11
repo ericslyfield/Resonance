@@ -1,9 +1,24 @@
+<?php
+
+/**
+* Blog Page Template File
+*
+* @package Premise
+*/
+
+?>
+
+<header>
+    <!-- Loads Header -->
+    <?php get_header(); ?>
+</header>
+
 <?php if (have_posts()) : 
 	while( have_posts()): the_post(); ?>
 
 		<?php the_content(); ?>
 
-		<div id="thumb" class="thumbnail links-thumbnail span-7-mobile span-7-tablet span-10-desktop">
+		<div id="thumb" class="thumbnail links-thumbnail">
 			<?php the_post_thumbnail('large'); ?>
 		</div>
 

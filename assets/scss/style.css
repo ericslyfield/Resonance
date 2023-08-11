@@ -1,63 +1,5 @@
 @charset "UTF-8";
-/* gothic-a1-regular - latin */
-@font-face {
-  font-family: "Gothic A1";
-  font-style: normal;
-  font-weight: 400;
-  src: local("../fonts/gothic-a1-v13-latin-regular.woff2"), url("./fonts/gothic-a1-v13-latin-regular.woff2") format("woff2"), url("./fonts/gothic-a1-v13-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* gothic-a1-600 - latin */
-@font-face {
-  font-family: "Gothic A1";
-  font-style: normal;
-  font-weight: 600;
-  src: local(""), url("./fonts/gothic-a1-v13-latin-600.woff2") format("woff2"), url("./fonts/gothic-a1-v13-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* gothic-a1-700 - latin */
-@font-face {
-  font-family: "Gothic A1";
-  font-style: normal;
-  font-weight: 700;
-  src: local(""), url("./fonts/gothic-a1-v13-latin-700.woff2") format("woff2"), url("./fonts/gothic-a1-v13-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* gothic-a1-900 - latin */
-@font-face {
-  font-family: "Gothic A1";
-  font-style: normal;
-  font-weight: 900;
-  src: local(""), url("./fonts/gothic-a1-v13-latin-900.woff2") format("woff2"), url("./fonts/gothic-a1-v13-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* courier-prime-regular - latin */
-@font-face {
-  font-family: "Courier Prime";
-  font-style: normal;
-  font-weight: 400;
-  src: local(""), url("./fonts/courier-prime-v7-latin-regular.woff2") format("woff2"), url("./fonts/courier-prime-v7-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* courier-prime-italic - latin */
-@font-face {
-  font-family: "Courier Prime";
-  font-style: italic;
-  font-weight: 400;
-  src: local(""), url("./fonts/courier-prime-v7-latin-italic.woff2") format("woff2"), url("./fonts/courier-prime-v7-latin-italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* courier-prime-700 - latin */
-@font-face {
-  font-family: "Courier Prime";
-  font-style: normal;
-  font-weight: 700;
-  src: local(""), url("./fonts/courier-prime-v7-latin-700.woff2") format("woff2"), url("./fonts/courier-prime-v7-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* courier-prime-700italic - latin */
-@font-face {
-  font-family: "Courier Prime";
-  font-style: italic;
-  font-weight: 700;
-  src: local(""), url("./fonts/courier-prime-v7-latin-700italic.woff2") format("woff2"), url("./fonts/courier-prime-v7-latin-700italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/**
- * Resonance Custom Colour Codes
- */
+/* Hover */
 /* Blur */
 .blur {
   z-index: 100;
@@ -93,6 +35,65 @@
   transition: ease-in-out 0.6s;
 }
 
+/**
+ *  Resonance Custom Colour Codes
+ */
+/* gothic-a1-regular - latin */
+@font-face {
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../../fonts/gothic-a1-v13-latin-regular.woff2") format("woff2"), url("../../fonts/gothic-a1-v13-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* gothic-a1-600 - latin */
+@font-face {
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 600;
+  src: local(""), url("../../fonts/gothic-a1-v13-latin-600.woff2") format("woff2"), url("../../fonts/gothic-a1-v13-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* gothic-a1-700 - latin */
+@font-face {
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../../fonts/gothic-a1-v13-latin-700.woff2") format("woff2"), url("../../fonts/gothic-a1-v13-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* gothic-a1-900 - latin */
+@font-face {
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 900;
+  src: local(""), url("../../fonts/gothic-a1-v13-latin-900.woff2") format("woff2"), url("../../fonts/gothic-a1-v13-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* courier-prime-regular - latin */
+@font-face {
+  font-family: "Courier Prime";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../../fonts/courier-prime-v7-latin-regular.woff2") format("woff2"), url("../../fonts/courier-prime-v7-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* courier-prime-italic - latin */
+@font-face {
+  font-family: "Courier Prime";
+  font-style: italic;
+  font-weight: 400;
+  src: local(""), url("../../fonts/courier-prime-v7-latin-italic.woff2") format("woff2"), url("../../fonts/courier-prime-v7-latin-italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* courier-prime-700 - latin */
+@font-face {
+  font-family: "Courier Prime";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../../fonts/courier-prime-v7-latin-700.woff2") format("woff2"), url("../../fonts/courier-prime-v7-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* courier-prime-700italic - latin */
+@font-face {
+  font-family: "Courier Prime";
+  font-style: italic;
+  font-weight: 700;
+  src: local(""), url("../../fonts/courier-prime-v7-latin-700italic.woff2") format("woff2"), url("../../fonts/courier-prime-v7-latin-700italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 /**********************
 * Browser Reset Rules *
 ***********************/
@@ -101,7 +102,7 @@ html {
 }
 
 html, body, div {
-  margin: 0;
+  margin-top: 0;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -117,6 +118,7 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
+  margin: 0;
   padding: 0;
   border: 0;
   vertical-align: baseline;
@@ -238,64 +240,322 @@ a {
   text-decoration: none;
 }
 
-.body-text {
-  font-family: "Courier Prime", monospace;
-  font-size: small;
-  line-height: 14px;
+.grid {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr auto;
 }
 
-.body-text-alt {
-  font-family: "Courier Prime", monospace;
-  font-size: x-small;
-  line-height: 14px;
+.column {
+  grid-column: 2/12;
+  display: flex;
+  flex-direction: column;
 }
 
-.dotted-break {
-  grid-column: 2/22;
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 25px;
+  box-sizing: border-box;
 }
 
-.blog-metadata {
-  grid-column: 2/4;
+.row {
+  display: flex;
+  flex-flow: row wrap;
 }
 
-.blog-thumbnail {
-  grid-column: 8/12;
+@media (min-width: 480) {
+  .span-1-mobile {
+    flex-basis: 8.3333333333%;
+    max-width: 8.3333333333%;
+  }
+  .span-2-mobile {
+    flex-basis: 16.6666666667%;
+    max-width: 16.6666666667%;
+  }
+  .span-3-mobile {
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+  .span-4-mobile {
+    flex-basis: 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+  .span-5-mobile {
+    flex-basis: 41.6666666667%;
+    max-width: 41.6666666667%;
+  }
+  .span-6-mobile {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+  .span-7-mobile {
+    flex-basis: 58.3333333333%;
+    max-width: 58.3333333333%;
+  }
+  .span-8-mobile {
+    flex-basis: 66.6666666667%;
+    max-width: 66.6666666667%;
+  }
+  .span-9-mobile {
+    flex-basis: 75%;
+    max-width: 75%;
+  }
+  .span-10-mobile {
+    flex-basis: 83.3333333333%;
+    max-width: 83.3333333333%;
+  }
+  .span-11-mobile {
+    flex-basis: 91.6666666667%;
+    max-width: 91.6666666667%;
+  }
+  .span-12-mobile {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+@media (min-width: 720) {
+  .span-1-tablet {
+    flex-basis: 8.3333333333%;
+    max-width: 8.3333333333%;
+  }
+  .span-2-tablet {
+    flex-basis: 16.6666666667%;
+    max-width: 16.6666666667%;
+  }
+  .span-3-tablet {
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+  .span-4-tablet {
+    flex-basis: 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+  .span-5-tablet {
+    flex-basis: 41.6666666667%;
+    max-width: 41.6666666667%;
+  }
+  .span-6-tablet {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+  .span-7-tablet {
+    flex-basis: 58.3333333333%;
+    max-width: 58.3333333333%;
+  }
+  .span-8-tablet {
+    flex-basis: 66.6666666667%;
+    max-width: 66.6666666667%;
+  }
+  .span-9-tablet {
+    flex-basis: 75%;
+    max-width: 75%;
+  }
+  .span-10-tablet {
+    flex-basis: 83.3333333333%;
+    max-width: 83.3333333333%;
+  }
+  .span-11-tablet {
+    flex-basis: 91.6666666667%;
+    max-width: 91.6666666667%;
+  }
+  .span-12-tablet {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+@media (min-width: 960) {
+  .span-1-tablet-wide {
+    flex-basis: 8.3333333333%;
+    max-width: 8.3333333333%;
+  }
+  .span-2-tablet-wide {
+    flex-basis: 16.6666666667%;
+    max-width: 16.6666666667%;
+  }
+  .span-3-tablet-wide {
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+  .span-4-tablet-wide {
+    flex-basis: 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+  .span-5-tablet-wide {
+    flex-basis: 41.6666666667%;
+    max-width: 41.6666666667%;
+  }
+  .span-6-tablet-wide {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+  .span-7-tablet-wide {
+    flex-basis: 58.3333333333%;
+    max-width: 58.3333333333%;
+  }
+  .span-8-tablet-wide {
+    flex-basis: 66.6666666667%;
+    max-width: 66.6666666667%;
+  }
+  .span-9-tablet-wide {
+    flex-basis: 75%;
+    max-width: 75%;
+  }
+  .span-10-tablet-wide {
+    flex-basis: 83.3333333333%;
+    max-width: 83.3333333333%;
+  }
+  .span-11-tablet-wide {
+    flex-basis: 91.6666666667%;
+    max-width: 91.6666666667%;
+  }
+  .span-12-tablet-wide {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+@media (min-width: 1200) {
+  .span-1-desktop {
+    color: aqua;
+    flex-basis: 8.3333333333%;
+    max-width: 8.3333333333%;
+  }
+  .span-2-desktop {
+    color: aqua;
+    flex-basis: 16.6666666667%;
+    max-width: 16.6666666667%;
+  }
+  .span-3-desktop {
+    color: aqua;
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+  .span-4-desktop {
+    color: aqua;
+    flex-basis: 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+  .span-5-desktop {
+    color: aqua;
+    flex-basis: 41.6666666667%;
+    max-width: 41.6666666667%;
+  }
+  .span-6-desktop {
+    color: aqua;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+  .span-7-desktop {
+    color: aqua;
+    flex-basis: 58.3333333333%;
+    max-width: 58.3333333333%;
+  }
+  .span-8-desktop {
+    color: aqua;
+    flex-basis: 66.6666666667%;
+    max-width: 66.6666666667%;
+  }
+  .span-9-desktop {
+    color: aqua;
+    flex-basis: 75%;
+    max-width: 75%;
+  }
+  .span-10-desktop {
+    color: aqua;
+    flex-basis: 83.3333333333%;
+    max-width: 83.3333333333%;
+  }
+  .span-11-desktop {
+    color: aqua;
+    flex-basis: 91.6666666667%;
+    max-width: 91.6666666667%;
+  }
+  .span-12-desktop {
+    color: aqua;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+/*************
+* Navigation *
+**************/
+#navigation {
+  display: flex;
+  flex: 1 1 50%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  margin: 0;
+  line-height: 1;
+  padding: 50px 0px;
+  justify-content: space-between;
+}
+#navigation .site-description {
+  color: bisque;
+  max-width: 150px;
 }
 
-/* ===== Scrollbar CSS ===== */
-/* Firefox */
-* > .links-body {
-  scrollbar-width: auto;
-  scrollbar-color: #0e531c #10ad64;
+#navigation,
+#main-content {
+  background: rgba(0, 0, 0, 0.3);
+  margin-bottom: 0px;
+}
+#navigation h1, #navigation h2, #navigation h3, #navigation h4, #navigation h5, #navigation h6, #navigation cite,
+#main-content h1,
+#main-content h2,
+#main-content h3,
+#main-content h4,
+#main-content h5,
+#main-content h6,
+#main-content cite {
+  color: #FAF6ED;
+}
+#navigation h1 a, #navigation h2 a, #navigation h3 a, #navigation h4 a, #navigation h5 a, #navigation h6 a, #navigation cite a,
+#main-content h1 a,
+#main-content h2 a,
+#main-content h3 a,
+#main-content h4 a,
+#main-content h5 a,
+#main-content h6 a,
+#main-content cite a {
+  color: #FAF6ED;
+}
+#navigation h1 a:hover, #navigation h2 a:hover, #navigation h3 a:hover, #navigation h4 a:hover, #navigation h5 a:hover, #navigation h6 a:hover, #navigation cite a:hover,
+#main-content h1 a:hover,
+#main-content h2 a:hover,
+#main-content h3 a:hover,
+#main-content h4 a:hover,
+#main-content h5 a:hover,
+#main-content h6 a:hover,
+#main-content cite a:hover {
+  color: #E2D45E;
 }
 
-/* Chrome, Edge, and Safari */
-* > .links-body::-webkit-scrollbar {
-  width: 5px;
+div#floating-menu {
+  display: none;
+}
+div#floating-menu ul {
+  padding: 0 10px 0 10px;
+  /* WP Active Menu item */
+}
+div#floating-menu ul a {
+  display: flex;
+  flex-direction: row;
+}
+div#floating-menu ul .current-menu-item {
+  text-decoration: line-through;
+  color: white;
 }
 
-* > .links-body::-webkit-scrollbar-track {
-  background: #10ad64;
-}
-
-* > .links-body::-webkit-scrollbar-thumb {
-  background-color: #003300;
-  border-radius: 20px;
-  border: 0px none #ffffff;
-}
-
-* > .clients-body::-webkit-scrollbar {
-  width: 5px;
-}
-
-* > .clients-body::-webkit-scrollbar-track {
-  background: #10ad64;
-}
-
-* > .clients-body::-webkit-scrollbar-thumb {
-  background-color: #003300;
-  border-radius: 20px;
-  border: 0px none #ffffff;
+/* Close Button */
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: relative;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
 }
 
 /***********************
@@ -438,121 +698,40 @@ dialog#modal-menu .mobile-menu {
   display: none;
 }
 
-.grid {
-  display: grid;
-  margin: 0 auto;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 1fr auto;
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* > .links-body {
+  scrollbar-width: auto;
+  scrollbar-color: #0e531c #10ad64;
 }
 
-.column {
-  grid-column: 2/12;
-  display: flex;
-  flex-direction: column;
+/* Chrome, Edge, and Safari */
+* > .links-body::-webkit-scrollbar {
+  width: 8px;
 }
 
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 25px;
-  box-sizing: border-box;
+* > .links-body::-webkit-scrollbar-track {
+  background: #10ad64;
 }
 
-.row {
-  display: flex;
-  flex-flow: row wrap;
+* > .links-body::-webkit-scrollbar-thumb {
+  background-color: #003300;
+  border-radius: 20px;
+  border: 0px none #ffffff;
 }
 
-/**************
-* Footer Page *
-***************/
-footer {
-  font-family: "Courier Prime", monospace;
-  font-size: 0.75rem;
-  flex-flow: column;
-  height: 100px;
-  text-align: center;
+* > .clients-body::-webkit-scrollbar {
+  width: 5px;
 }
 
-/*************
-* Navigation *
-**************/
-#navigation {
-  display: flex;
-  flex: 1 1 50%;
-  position: sticky;
-  top: 0;
-  left: 0;
-  margin: 0;
-  line-height: 1;
-  justify-content: space-between;
+* > .clients-body::-webkit-scrollbar-track {
+  background: #10ad64;
 }
 
-div#floating-menu {
-  display: none;
-}
-div#floating-menu ul {
-  padding: 0 10px 0 10px;
-  /* WP Active Menu item */
-}
-div#floating-menu ul a {
-  display: flex;
-  flex-direction: row;
-}
-div#floating-menu ul .current-menu-item {
-  text-decoration: line-through;
-  color: white;
-}
-
-/* Close Button */
-/* Position the close button (top right corner) */
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-}
-
-#main-content {
-  padding-top: 50px auto;
-}
-#main-content h1.hero-text {
-  max-width: 100%;
-  height: -moz-fit-content;
-  height: fit-content;
-  font-family: "Gothic A1", sans-serif;
-  grid-column: 2/12;
-  grid-row: 1/2;
-  grid-template-columns: minmax(min-content, 100%);
-}
-#main-content .hero-image {
-  grid-column: 2/12;
-  grid-row: 2/3;
-  padding: 0 0 0 0;
-}
-#main-content .main-text {
-  grid-row: 3/4;
-  position: relative;
-  grid-column: 2/12;
-  font-family: "Courier Prime", monospace;
-  font-size: 0.75rem;
-  grid-template-columns: minmax(min-content, 300px);
-  padding: 10px 0 10px 0;
-}
-#main-content #home-buttons {
-  grid-row: 4/5;
-  grid-column: 2/12;
-  gap: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-#main-content .button-main, #main-content .button-main:hover {
-  margin: 5px 0 5px 0;
-}
-#main-content .button-main, #main-content .button-main:hover {
-  margin: 5px 0 5px 0;
+* > .clients-body::-webkit-scrollbar-thumb {
+  background-color: #003300;
+  border-radius: 20px;
+  border: 0px none #ffffff;
 }
 
 .bio-section {
@@ -597,6 +776,171 @@ div#floating-menu ul .current-menu-item {
   grid-row: 1/2;
 }
 
+#blog-content {
+  padding: 50px 0;
+  background: #467061;
+  color: #FAF6ED;
+  font-family: "Courier Prime", monospace;
+}
+#blog-content a {
+  color: #FAF6ED;
+}
+#blog-content .hero-image {
+  grid-column: 2/12;
+  grid-row: 2/3;
+  z-index: 50;
+  padding: 15px 0;
+}
+#blog-content .dotted-break {
+  grid-column: 2/12;
+}
+#blog-content .blog-metadata {
+  grid-column: 2/4;
+}
+#blog-content .blog-thumbnail {
+  grid-column: 8/12;
+}
+#blog-content .blog-title-text,
+#blog-content .body-text-align,
+#blog-content .content-area {
+  grid-column: 5/12;
+}
+#blog-content .blog-thumbnail {
+  grid-column: 2/12;
+}
+#blog-content .audio-content {
+  grid-column: 2/12;
+}
+#blog-content .music-container {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+#blog-content .wp-block-bpmp-mp3-player #cover-box {
+  bottom: 3rem;
+}
+#blog-content .image-content {
+  grid-column: 2/12;
+}
+#blog-content .image-content .wp-caption {
+  display: block;
+}
+#blog-content .image-content .aligncenter {
+  grid-column: 2/12;
+}
+#blog-content .link-title-text {
+  grid-column: 5/12;
+}
+#blog-content .aside-body-text {
+  grid-column: 5/12;
+}
+#blog-content .quote-text-align {
+  grid-column: 5/12;
+}
+#blog-content .quote-author {
+  grid-column: 5/12;
+  text-align: right;
+  font-family: "Courier Prime", monospace;
+}
+#blog-content h2.blog-title-text {
+  max-width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-family: "Gothic A1", sans-serif;
+  grid-column: 2/12;
+  grid-row: 1/2;
+  grid-template-columns: minmax(min-content, 100%);
+}
+#blog-content .blog-hero-image {
+  grid-column: 2/12;
+  padding: 0 0 0 0;
+}
+#blog-content .blog-main-text {
+  grid-row: 3/4;
+  position: relative;
+  grid-column: 2/12;
+  font-family: "Courier Prime", monospace;
+  font-size: 0.75rem;
+  grid-template-columns: minmax(min-content, 300px);
+  padding: 10px 0 10px 0;
+}
+#blog-content .thumbnail {
+  grid-column: 5/12;
+}
+
+#main-content h2.blog-title-text {
+  max-width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-family: "Gothic A1", sans-serif;
+  grid-column: 2/12;
+  grid-row: 1/2;
+  grid-template-columns: minmax(min-content, 100%);
+}
+#main-content .blog-hero-image {
+  grid-column: 2/12;
+  padding: 0 0 0 0;
+}
+#main-content .blog-main-text {
+  grid-row: 3/4;
+  position: relative;
+  grid-column: 2/12;
+  font-family: "Courier Prime", monospace;
+  font-size: 0.75rem;
+  grid-template-columns: minmax(min-content, 300px);
+  padding: 10px 0 10px 0;
+}
+
+#home-content .post-list-container {
+  background-color: aqua;
+}
+#home-content .post-list-heading {
+  grid-column: 5/12;
+  background-color: burlywood;
+  color: hotpink;
+}
+#home-content .sharp {
+  grid-column: 7/8;
+}
+#home-content .hero {
+  grid-column: 2/13;
+}
+#home-content #home-buttons {
+  grid-row: 4/5;
+  grid-column: 2/12;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#home-content .button-main, #home-content .button-main:hover {
+  margin: 5px 0 5px 0;
+}
+#home-content .button-main, #home-content .button-main:hover {
+  margin: 5px 0 5px 0;
+}
+#home-content .thumbnail {
+  grid-column: 2/11;
+  grid-row: 2;
+}
+#home-content h1.hero-text {
+  max-width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-family: "Gothic A1", sans-serif;
+  grid-column: 2/12;
+  grid-row: 1/2;
+  z-index: 100;
+  grid-template-columns: minmax(min-content, 100%);
+}
+#home-content .main-text {
+  grid-row: 3/4;
+  position: relative;
+  grid-column: 2/12;
+  font-family: "Courier Prime", monospace;
+  font-size: 0.75rem;
+  grid-template-columns: minmax(min-content, 300px);
+  padding: 10px 0 10px 0;
+}
+
 .info-section {
   grid-column: 2/12;
   grid-row: 1/2;
@@ -624,97 +968,8 @@ div#floating-menu ul .current-menu-item {
   overflow-y: scroll;
 }
 
-.breathe {
-  padding: 100px 0 100px 0;
-}
-
-#main-content .blog-title-text {
-  grid-column: 5/12;
-}
-#main-content .blog-thumbnail {
-  grid-column: 2/12;
-}
-#main-content .body-text-align {
-  grid-column: 5/12;
-}
-#main-content .audio-content {
-  grid-column: 2/12;
-}
-#main-content .music-container {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-#main-content .wp-block-bpmp-mp3-player #cover-box {
-  bottom: 3rem;
-}
-#main-content .image-content {
-  grid-column: 2/12;
-}
-#main-content .image-content .wp-caption {
-  display: block;
-}
-#main-content .image-content .aligncenter {
-  grid-column: 2/12;
-}
-#main-content .link-title-text {
-  grid-column: 5/12;
-}
-#main-content .aside-body-text {
-  grid-column: 5/12;
-}
-#main-content .quote-text-align {
-  grid-column: 5/12;
-}
-#main-content .quote-author {
-  grid-column: 8/12;
-}
-#main-content h2.blog-title-text {
-  max-width: 100%;
-  height: -moz-fit-content;
-  height: fit-content;
-  font-family: "Gothic A1", sans-serif;
-  grid-column: 2/12;
-  grid-row: 1/2;
-  grid-template-columns: minmax(min-content, 100%);
-}
-#main-content .blog-hero-image {
-  grid-column: 2/12;
-  padding: 0 0 0 0;
-}
-#main-content .blog-main-text {
-  grid-row: 3/4;
-  position: relative;
-  grid-column: 2/12;
-  font-family: "Courier Prime", monospace;
-  font-size: 0.75rem;
-  grid-template-columns: minmax(min-content, 300px);
-  padding: 10px 0 10px 0;
-}
-
-#main-content h2.blog-title-text {
-  max-width: 100%;
-  height: -moz-fit-content;
-  height: fit-content;
-  font-family: "Gothic A1", sans-serif;
-  grid-column: 2/12;
-  grid-row: 1/2;
-  grid-template-columns: minmax(min-content, 100%);
-}
-#main-content .blog-hero-image {
-  grid-column: 2/12;
-  padding: 0 0 0 0;
-}
-#main-content .blog-main-text {
-  grid-row: 3/4;
-  position: relative;
-  grid-column: 2/12;
-  font-family: "Courier Prime", monospace;
-  font-size: 0.75rem;
-  grid-template-columns: minmax(min-content, 300px);
-  padding: 10px 0 10px 0;
-}
-
 /*  
-Theme Name: Resonance 2023
+Theme Name: Resonance
 Theme URI: https://ericslyfield.com/themes/ericslyfieldcom
 Description: A Portfolio Theme...
 Author: Eric Slyfield
@@ -740,157 +995,4 @@ Tags: blog, portfolio, minimal,
 */
 /********************
 * SCSS Dependencies *
-********************/
-/******************
-* Utility Classes *
-*******************/
-a {
-  color: #003300;
-}
-
-spacer-before {
-  height: 50px;
-  grid-column: 1/13;
-}
-
-spacer-after {
-  height: 50px;
-  grid-column: 1/13;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1em;
-}
-
-.body-text h5, .body-text h6 {
-  color: #003300;
-}
-
-#navigation {
-  padding: 15px;
-}
-
-#navigation, #main-content {
-  background: #467061;
-  margin-bottom: -1px;
-}
-#navigation h1, #navigation h2, #navigation h3, #navigation h4, #navigation h5, #navigation h6, #main-content h1, #main-content h2, #main-content h3, #main-content h4, #main-content h5, #main-content h6 {
-  color: #FAF6ED;
-}
-#navigation h1 a, #navigation h2 a, #navigation h3 a, #navigation h4 a, #navigation h5 a, #navigation h6 a, #main-content h1 a, #main-content h2 a, #main-content h3 a, #main-content h4 a, #main-content h5 a, #main-content h6 a {
-  color: #FAF6ED;
-}
-#navigation h1 a:hover, #navigation h2 a:hover, #navigation h3 a:hover, #navigation h4 a:hover, #navigation h5 a:hover, #navigation h6 a:hover, #main-content h1 a:hover, #main-content h2 a:hover, #main-content h3 a:hover, #main-content h4 a:hover, #main-content h5 a:hover, #main-content h6 a:hover {
-  color: #E2D45E;
-}
-
-footer {
-  background: #467061;
-  color: #FAF6ED;
-}
-
-.full-screen {
-  position: absolute;
-  margin: 0 auto;
-  padding: 0 auto;
-  background-color: rgba(240, 240, 240, 0.659);
-}
-
-.centered {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: -moz-max-content;
-  width: max-content;
-  height: -moz-max-content;
-  height: max-content;
-  width: 100%;
-  height: 100%;
-  max-width: 100vw;
-  max-height: 100vh;
-  box-sizing: border-box; /* Try this solution */
-}
-
-.body-text {
-  color: #FAF6ED;
-}
-
-.body-text-alt {
-  color: #BEBAB3;
-}
-
-* > .links-body {
-  scrollbar-width: auto;
-}
-
-* > .links-body::-webkit-scrollbar-track {
-  background: #6e847a;
-  border: 1px solid #467061;
-}
-
-* > .clients-body::-webkit-scrollbar-track {
-  background: #6e847a;
-  border: 1px solid #467061;
-}
-
-.button-main {
-  color: #FAF6ED;
-  border: solid #E2D45E 3px;
-}
-
-.button-ghost {
-  color: #2A2925;
-  border: solid #E2D45E 3px;
-}
-
-.line-break {
-  width: 50%;
-  margin-bottom: 40px !important;
-}
-
-article {
-  line-height: 0.85rem;
-}
-article p {
-  line-height: 1;
-}
-
-img {
-  height: auto;
-  width: auto;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-img.alignright {
-  float: right;
-  margin: 0 0 1em 1em;
-}
-
-img.alignleft {
-  float: left;
-  margin: 0 1em 1em 0;
-}
-
-img.aligncenter {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-a img.alignright {
-  float: right;
-  margin: 0 0 1em 1em;
-}
-
-a img.alignleft {
-  float: left;
-  margin: 0 1em 1em 0;
-}
-
-a img.aligncenter {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}/*# sourceMappingURL=style.css.map */
+********************//*# sourceMappingURL=style.css.map */

@@ -9,12 +9,14 @@
 
 ?>
 
-<header>
-    <?php get_header(); ?>
-</header>
+<?php get_header(); ?>
 
-<main>
+<main id="main-content" class="grid">
     <article>
         <?php get_template_part( 'template-parts/page/single' )?>
     </article>
 </main>
+
+<footer class="grid">
+    <?php get_footer();?>
+</footer>

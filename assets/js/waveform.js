@@ -1,76 +1,71 @@
-document.addEventListener("DOMContentLoaded", () => {
+// document.addEventListener("DOMContentLoaded", () => {
     
-  // Run Function
-// fetchURL().then(() => console.log('Ready to Run...'));
+//   // Run Function
+// // fetchURL().then(() => console.log('Ready to Run...'));
 
-// Fetch URL Logic
-async function fetchURL(){
+// // Fetch URL Logic
+// async function fetchURL(){
 
-    let headersList = {
-        "Accept": "*/*",
-        "User-Agent": "Thunder Client c/o Nonarchival",
-    }
+//     let headersList = {
+//         "Accept": "*/*",
+//         "User-Agent": "Thunder Client c/o Nonarchival",
+//     }
 
-    let array = await fetch("http://resonance.local/wp-json/wp/v2/media?media_type=audio", { 
-        method: "GET",
-        headers: headersList,
-    });
+//     let currentSong = await fetch("http://resonance.local/wp-json/wp/v2/media?media_type=audio", { 
+//         method: "GET",
+//         headers: headersList,
+//     });
     
-    audioURL = await array.json();
+//     audioURL = await currentSong.json();
 
-    async function iterate(){
+//     async function iterate(){
 
-        let link = [];
+//         let link = [];
 
-        for (const link in audioURL) {
-            // console.log(audioURL[link]?.source_url) + "<br>";
-            let url = [[audioURL[link]?.source_url]];
+//         for (const link in audioURL) {
+//             // console.log(audioURL[link]?.source_url) + "<br>";
+//             let url = [[audioURL[link]?.source_url]];
 
-            const contentArea = document.getElementById('waveform');
-            const audioFragment = document.createDocumentFragment();
+//             const contentArea = document.getElementById('waveform');
+//             const audioFragment = document.createDocumentFragment();
 
-            let array = [[url]]
+//             let array = [[url]]
 
-            for (var wavesurfer in url) {
+//             var wavesurfer = WaveSurfer.create({
+//                 container: '.waveform',
+//                 waveColor: '#FFF',
+//                 progressColor: '#CCC333',
+//                 height: 100,
+//                 barWidth: 3,
+//                 barRadius: 4
+//             });
 
-               
-            }
-
-            var wavesurfer = WaveSurfer.create({
-                container: '.waveform',
-                waveColor: '#FFF',
-                progressColor: '#CCC333',
-                height: 100,
-                barWidth: 3,
-                barRadius: 4
-            });
-
-            console.log(array);
+//             console.log(url);
     
-            wavesurfer.load(url);
+//             // wavesurfer.load(url);
 
-                // Button to Test Logs
-let button = document.querySelector('button');
+//                 // Button to Test Logs
+// let button = document.querySelector('button');
 
-button.addEventListener('click', () => {
-    wavesurfer.play();
-    console.log('Audio Button Cicked!');
-});
+// button.addEventListener('click', () => {
+//     wavesurfer.play();
+//     console.log('Audio Button Cicked!');
+// });
 
 
             
 
-            console.log('-----')
+//             console.log('-----')
         
 
-}
+// }
 
-}
+// }
 
-    iterateURL = iterate();
+//     iterateURL = iterate();
     
-    }
+//     }
 
- fetchURL();
+//  fetchURL();
 
-})
+// })

@@ -5,11 +5,10 @@
 *
 * @package Resonace
 */
-?>
 
-<header>
-    <?php get_header(); ?>
-</header>
+get_header();
+
+?>
 
 <body <?php body_class(); ?> >
 
@@ -21,10 +20,9 @@
     };
 ?>
 
-<main id="main-content" class="grid">
-    <?php get_template_part( 'template-parts/page/landing' )?>
+<main id="landing-content" class="#">
+    <?php get_template_part( 'template-parts/page/front-page' )?>
 </main>
 
-<footer>
-    <?php get_footer();?>
-</footer>
+
+<?php get_footer();?>

@@ -1,13 +1,19 @@
 <?php
 /**
-* Footer Template
+ * The template for displaying the footer.
+ *
+ * Contains the closing of the #page div and all content after
 *
 * @package Resonance
+* @link        https://nonarchival.com/themes/resonance
 */
 ?>
 
-<?php wp_footer(); ?>
-<?php get_template_part( 'template-parts/footer/footer' )?>
-     
+<?php get_sidebar(); ?>
+
+<footer class="site-footer"></footer>
+
+<?php wp_footer() ?>
+
 </body>
 </html>

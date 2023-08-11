@@ -1,11 +1,15 @@
+@use '../abstracts/variables' as *;
+
 /**************
 * Footer Page *
 ***************/
 
 footer {
+  grid-row: 12/12;
   font-family: 'Courier Prime', monospace;
   font-size: .75rem;
     flex-flow: column;
     height: 100px;
     text-align: center;
+    background-color: $pine;
   }
