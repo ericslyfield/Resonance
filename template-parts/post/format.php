@@ -8,7 +8,7 @@
 
 ?>
 
-<div class="grid">
+<div class="grid container">
 
     <!-- Category -->
     <div class="category up small bold blog-category-text">

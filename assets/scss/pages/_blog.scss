@@ -3,12 +3,12 @@
 #blog-content{
 
     padding: 50px 0;
-    background: $pine;
-    color: $eggshell;
+    background: hsl(var(--color-medium));
+    color: hsl(var(--text-light));
     font-family: 'Courier Prime', monospace;
 
     a{
-        color: $eggshell;
+        color: hsl(var(--text-light));
     }
 
     .hero-image{

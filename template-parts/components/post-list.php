@@ -7,39 +7,42 @@ $args = array(
 
   $query = new WP_Query($args);
 
-  echo '<div class="post-list-container center">';
+  echo '<div class="post-list size-body uppercase courier">';
+  
+  if ($query->have_posts()){
+    while ($query->have_posts()) {
+      $query->the_post();
 
-  echo '<h3 class="post-list-heading">';
-  echo 'Recent Posts: ';
-  echo '</h3>';
+      echo '<div class="post-list__item flex">'; ?>
 
-  if ($query->have_posts()) {
-      while ($query->have_posts()) {
-          $query->the_post();
+          <a href="<?php the_permalink();?>" class="post-list__title bold"><?php the_title(); ?></a> 
 
-        echo '<br>';
+          <?php /* Title */ 
 
-        echo '<div class="post-list-title">';
-        the_title(); 
-        echo '</div>';
+        echo '<div class="post-list__metadata">';
 
-        echo '<br>';
+          echo '<div class="post-list__category">';
+            esc_html(the_category(', '));
+          echo '</div>'; /* Category */ 
 
-        echo '<div class="post-list-category">';
-        the_category(', ');
-        echo '</div>';
 
-        echo '𝇇';
+          echo '<div class="post-list__separator mobile__reader-only">';
+          echo '⁎'; 
+          echo '</div>'; /* Separator */ 
 
-        echo '<div class="post-list-date">';
-        the_date('M Y ');
-        echo '</div>';
 
-        echo '<br>';
-          ?>
+          echo '<div class="post-list__date mobile__reader-only">';
+          $post_date = get_the_date( 'M Y ' ); 
+            echo $post_date;
+          echo '</div>'; /* Date */ 
 
-          <?php
-      }
-    };
+        echo '</div>'; /* Metadaata Ends */ 
+
+      echo '</div>';
+            ?>
+
+            <?php
+        }
+      };
     echo '</div>';
 ?>

@@ -14,5 +14,9 @@ if (is_page( 'Contact' )){
     require_once( 'assets/ajax/filter.php' );
 };
 
+function my_theme_styles() {
+    wp_enqueue_style( 'dashicons' );
+    }
+
 ?>
 

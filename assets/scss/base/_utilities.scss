@@ -1,12 +1,15 @@
-/*********************
-* Font Styling Rules *
-**********************/
+/******************
+* Utility Classes *
+*******************/
 
-.up{
+@use "sass:math";
+@use "../layout/breakpoints" as *;
+
+.uppercase{
     text-transform: uppercase;
 }
 
-.low{
+.lowercase{
     text-transform: lowercase;
 }
 
@@ -15,7 +18,7 @@
 }
 
 .bold{
-    font-weight: bold !important;
+    font-weight: bold;
 }
 
 .small{
@@ -38,42 +41,26 @@
     font-size: xx-large;
 }
 
-h1{
-    font-size: 3rem;
-    font-weight: 800;
+.flex{
+    display: flex;
+    gap: var(--gap, 1rem);
 }
 
-h2{
-    font-size: 1.5rem;
+
+.container{
+    margin-inline: auto;
+    padding-inline: inherit;
+    max-width: 100rem;
 }
 
-h3{
-    font-size: .75rem;
-}
-
-h1, h2{
-    font-family: 'Gothic A1', sans-serif;
-    
-}
-
-h3, h4{
-    font-family: 'Gothic A1', sans-serif;
-}
-
-h5{
-    font-family: 'Courier Prime', monospace;
-    font-weight: 500;
-    line-height: 14px;
-    font-size: small;
-}
-
-h6{
-    font-family: 'Courier Prime', monospace;
-    font-weight: 400;
-    line-height: 14px;
-    font-size: small;
-}
-
-a{
-    text-decoration: none;
+.reader-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }

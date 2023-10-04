@@ -5,73 +5,36 @@
 
 .grid{
     display: grid;
+    gap: var(--gap, 1rem);
     margin: 0 auto;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr auto;
+    overflow: hidden;
+    grid-template-columns: repeat(12, minmax(1rem, 1fr));
+    grid-auto-rows: auto;
+
+    .hero__heading{
+        grid-column: 2 / 12;
+        grid-row: 2;
+        z-index: 100;
+        // transform: translateY(8rem);
+    }
+
+    .hero__subheading{
+        grid-column: 2 / 12;
+        grid-row: 3;
+    }
+
+    .hero__thumbnail{
+        grid-column: 1 / 13;
+        grid-row: 1;
+    }
+
+
+
 }
 
-.column{
-    grid-column: 2 / 12;
-
-    display: flex;
-    flex-direction: column;
-}
-
-.container{
+.thumbnail > img {
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 25px;
-    box-sizing: border-box;
-}
-
-.row{
-    display: flex;
-    flex-flow: row wrap;
-}
-
-
-
-$grid-columns: 12;
-
-// Column Classes
-
-@include mobile{
-    @for $i from 1 through $grid-columns {
-        $width: math.div($i * 100%, $grid-columns);
-        .span-#{$i}-mobile {
-            flex-basis: $width;
-            max-width: $width;
-        }
-    }
-}
-
-@include tablet{
-    @for $i from 1 through $grid-columns {
-        $width: math.div($i * 100%, $grid-columns);
-        .span-#{$i}-tablet {
-            flex-basis: $width;
-            max-width: $width;
-        }
-    }
-}
-@include tablet-wide{
-    @for $i from 1 through $grid-columns {
-        $width: math.div($i * 100%, $grid-columns);
-        .span-#{$i}-tablet-wide {
-            flex-basis: $width;
-            max-width: $width;
-        }
-    }
-}
-@include desktop{
-    @for $i from 1 through $grid-columns {
-        $width: math.div($i * 100%, $grid-columns);
-        .span-#{$i}-desktop {
-            color: aqua;
-            flex-basis: $width;
-            max-width: $width;
-        }
-    }
-
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
 }

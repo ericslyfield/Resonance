@@ -20,7 +20,7 @@ get_header();
     };
 ?>
 
-<main id="landing-content" class="#">
+<main id="landing-content" class="container grid">
     <?php get_template_part( 'template-parts/page/front-page' )?>
 </main>
 

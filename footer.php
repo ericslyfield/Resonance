@@ -11,9 +11,13 @@
 
 <?php get_sidebar(); ?>
 
-<footer class="site-footer"></footer>
+<footer class="size-caption container">
+
+ø
 
 <?php wp_footer() ?>
+
+</footer>
 
 </body>
 </html>

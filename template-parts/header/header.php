@@ -2,9 +2,10 @@
 <header id="navigation" class="bold" >
 
 <div id="home" class="home-icon" title="home icon">
-    <a href="<?php echo esc_url( get_home_url() ); ?>"><i class="ph-house-bold x-large"></i></a>
+    <a href="<?php echo esc_url( get_home_url() ); ?>"><i class="x-large"></i></a>
 </div>
-    <a href="javascript:void(0)"><i id="modal-open" class="ph-list-bold toggle x-large"></i></a>
+    <a href="javascript:void(0)"><span id="modal-open" class="dashicons dashicons-menu-alt3"></span></i></a>
+    
 </header>
 
 <dialog id="modal" class="x-large bold hide full-screen centered">
