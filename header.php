@@ -14,8 +14,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- <script src="https://unpkg.com/wavesurfer.js@6.6"></script> -->
-    <!-- <script async src="https://unpkg.com/phosphor-icons"></script> -->
+    <link rel="stylesheet" src="https://unpkg.com/wavesurfer.js@6.6"></link>
+    <link rel="stylesheet" async src="https://unpkg.com/phosphor-icons"></link>
 
     <?php wp_head(); ?>
 </head>

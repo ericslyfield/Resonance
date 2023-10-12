@@ -507,6 +507,44 @@ select {
   background-color: rgba(255, 255, 255, 0);
 }
 
+.grid .footer {
+  grid-column: 1/13;
+  display: flex;
+  width: 100%;
+}
+.grid .footer .footer__zone-one {
+  flex: 1;
+  padding: 1rem;
+  text-align: center;
+}
+.grid .footer .footer__zone-two {
+  flex: 1;
+  padding: 1rem;
+  text-align: center;
+}
+.grid .footer .footer__zone-three {
+  flex: 1;
+  padding: 1rem;
+  text-align: center;
+}
+.grid .footer .footer__zone-four {
+  flex: 1;
+  padding: 1rem;
+  text-align: center;
+}
+
+.credits {
+  grid-column: 1/13;
+  width: 100%;
+  justify-self: center;
+}
+.credits .site-credits__copyright,
+.credits .site-credits__separator,
+.credits .site-credits__links {
+  flex: 1;
+  justify-content: space-between;
+}
+
 dialog#modal-menu {
   font-family: "Gothic A1", sans-serif;
   display: none;

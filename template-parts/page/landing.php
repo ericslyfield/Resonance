@@ -1,5 +1,6 @@
 <?php
 
 get_template_part( 'template-parts/components/hero' ); 
-echo '<br>';
 get_template_part( 'template-parts/components/post-list' );
+get_template_part( 'template-parts/components/footer' );
+get_template_part( 'template-parts/components/credits' );

@@ -70,26 +70,5 @@ class Options {
        // Responive Video Embed Options
        add_theme_support( 'responsive-embeds' );
 
-       add_theme_support( 'widgets' );
-
-       function audioSidebar(){
-
-        register_sidebar( array(
-            'name' => 'Audio Sidebar',
-            'id' => 'audio-sidebar',
-            'before_title' => '<div class="wavesurfer">',
-            'after_title' => '</div>'
-        ) );
-
-        register_sidebar( array(
-            'name' => 'DefaultSidebar',
-            'id' => 'default-sidebar',
-            'before_title' => '<div class="sidebar">',
-            'after_title' => '</div>'
-        ) );
-       }
-
-       add_action( 'widgets_init', 'audioSidebar' );
-
    }
 }
