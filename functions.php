@@ -9,7 +9,6 @@ require( 'autoloader.php' );
 
 $Styling = new Styling;
 $Options = new Options;
-$Sidebars = new Sidebars;
 
 if (is_page( 'Contact' )){
     require_once( 'assets/ajax/filter.php' );
