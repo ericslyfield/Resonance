@@ -15,7 +15,7 @@
         grid-column: 2 / 12;
         grid-row: 2;
         z-index: 100;
-        // transform: translateY(8rem);
+        justify-self: center;
     }
 
     .hero__subheading{
@@ -26,6 +26,10 @@
     .hero__thumbnail{
         grid-column: 1 / 13;
         grid-row: 1;
+        width: 100%;
+        min-height: calc(100vh - 40px);
+        object-fit: cover;
+        aspect-ratio: 16 / 9 auto;
     }
 
 
