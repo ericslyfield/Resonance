@@ -1,0 +1,23 @@
+dialog#modal{
+    font-family: 'Gothic A1', sans-serif;
+    z-index: 9999;
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    border: none;
+    margin: auto;
+    padding: 0;
+}
+.modal{
+    z-index: 1;
+    overflow: hidden;
+    width: 420px;
+}
+
+.modal:not([open]) { 
+    display: none;
+}
+
+dialog::backdrop{
+    backdrop-filter: blur(8px);
+}

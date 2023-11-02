@@ -20,7 +20,7 @@ class Styling {
         // wp_register_style('bootstrap-css', get_template_directory_uri() . '/assets/library/css/bootstrap.min.css', [], null, 'all' );
         
         //Register Scripts
-        wp_register_script( 'modal', get_template_directory_uri() . '/assets/js/modal.js', [], filemtime( get_template_directory() . '/assets/js/modal.js' ));
+
         wp_register_script( 'clock', get_template_directory_uri() . '/assets/js/clock.js', [], filemtime( get_template_directory() . '/assets/js/clock.js' ));
         // wp_register_script( 'bootstrap-js', get_template_directory_uri() . '/assets/library/js/bootstrap/bootstrap.min.js', [ 'jquery' ], false, true);
         wp_register_script( 'blotter', get_template_directory_uri() . '/assets/library/js/blotter.min.js', [ 'jquery' ], false, true);
@@ -30,7 +30,7 @@ class Styling {
         wp_register_script( 'addClasses', get_template_directory_uri() . '/assets/js/addClasses.js', [], filemtime( get_template_directory() . '/assets/js/addClasses.js' ));
         endif;
 
-        wp_register_script( 'navigation', get_template_directory_uri() . '/assets/js/navigation.js', [], filemtime( get_template_directory() . '/assets/js/navigation.js' ));
+        wp_register_script( 'navigation', get_template_directory_uri() . '/assets/js/modals.js', [], filemtime( get_template_directory() . '/assets/js/modals.js' ));
         wp_register_script( 'audio', get_template_directory_uri() . '/assets/js/audio.js', [], filemtime( get_template_directory() . '/assets/js/audio.js' ));
         
         // Wavesurfer
@@ -46,12 +46,12 @@ class Styling {
         
         //Enqueue Scripts
         
-        wp_enqueue_script( 'scripts' );
+        // wp_enqueue_script( 'scripts' );
         wp_enqueue_script( 'addClasses' );
         wp_enqueue_script( 'navigation' );
         // wp_enqueue_script( 'ajax' );
         wp_enqueue_script( 'wavesurfer' );
-        wp_enqueue_script( 'modal' );
+        wp_enqueue_script( 'modals' );
         // wp_enqueue_script( 'bootstrap-js' );
         // wp_enqueue_script( 'clock' );
         // wp_enqueue_script( 'blotter' );

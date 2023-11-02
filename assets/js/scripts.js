@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 var didScroll;
 var lastScrollTop = 0;
-var navbarHeight = jQuery('header').outerHeight();
+var navbarHeight = getElementByTag('header').outerHeight();
 
 jQuery(window).scroll(function(event){
     didScroll = true;

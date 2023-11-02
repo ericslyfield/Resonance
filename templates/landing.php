@@ -19,7 +19,7 @@
 ?>
 
 <main id="landing" class="grid container">
-        <?php get_template_part( 'template-parts/page/landing' )?>
+    <?php get_template_part( 'template-parts/page/landing' )?>
 </main>
 
 <?php get_footer();?>

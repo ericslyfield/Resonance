@@ -5,7 +5,6 @@
 
 .grid{
     display: grid;
-    gap: var(--gap, 1rem);
     margin: 0 auto;
     overflow: hidden;
     grid-template-columns: repeat(12, minmax(1rem, 1fr));
@@ -27,12 +26,10 @@
         grid-column: 1 / 13;
         grid-row: 1;
         width: 100%;
-        min-height: calc(100vh - 40px);
-        object-fit: cover;
+        // min-height: calc(100vh - 40px);
+        // object-fit: cover;
         aspect-ratio: 16 / 9 auto;
     }
-
-
 
 }
 
@@ -41,4 +38,12 @@
     height: auto;
     max-height: 100%;
     object-fit: contain;
+}
+
+@media only screen and (max-width: 768px){
+    html,
+    body{
+    width:100%;
+    overflow-x:hidden;
+    }
 }
