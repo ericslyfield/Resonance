@@ -15,7 +15,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <link rel="stylesheet" src="https://unpkg.com/wavesurfer.js@6.6"></link>
-    <link rel="stylesheet" async src="https://unpkg.com/phosphor-icons"></link>
 
     <?php wp_head(); ?>
 </head>

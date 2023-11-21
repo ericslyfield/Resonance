@@ -1,32 +1,13 @@
-document.addEventListener("DOMContentLoaded", () => {
+const globalNavigation = document.querySelector('.navigation');
+const scrollObserver   = document.createElement('div');
 
-// Hide Header on on scroll down
+scrollObserver.setAttribute('data-scroll-observer', '');
+globalNavigation.before(scrollObserver);
 
-var didScroll;
-var lastScrollTop = 0;
-var navbarHeight = getElementByTag('header').outerHeight();
+const navBehaviour = new IntersectionObserver((entries) => {
+    console.log(entries);
+    globalNavigation.classList.toggle('stick');
+})
 
-jQuery(window).scroll(function(event){
-    didScroll = true;
-});
+navBehaviour.observe(scrollObserver);
 
-setInterval(function() {
-    if (didScroll) {
-        hasScrolled();
-        didScroll = false;
-    }
-}, 250);
-
-function hasScrolled() {
-    var st = jQuery(this).scrollTop();
-
-    // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop){
-       jQuery('header').removeClass('show-navigation').addClass('hide-navigation');
-    } else {
-      jQuery('header').removeClass('hide-navigation').addClass('show-navigation');
-    }
-    lastScrollTop = st;
-}
-});

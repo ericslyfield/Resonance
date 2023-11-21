@@ -1,16 +1,46 @@
 document.addEventListener("DOMContentLoaded", () => {
 
   var modal = document.getElementById('modal');
-  var modalOpen = document.getElementById('modal-open');
-  var modalClose = document.getElementById('modal-close');
-    
-  modalOpen.addEventListener('click', (e) => {
-    modal.showModal();
+  let dialog = document.getElementsByTagName('dialog');
+  let status = document.querySelector('.check-state');
+  var checkbox = document.querySelector("input[name=checkbox]");
+
+  function check() {
+    document.getElementById("checkbox").checked = true;
+}
+
+function uncheck() {
+    document.getElementById("checkbox").checked = false;
+}
+
+  let escape = () => {console.log("esc...")};
+
+  checkbox.addEventListener('change', function() {
+      if (this.checked) {
+          check();
+          modal.showModal();
+          console.log('Menu Open');
+      } else {
+          uncheck();
+          modal.close();
+          console.log('Menu Closed');
+      }
   })
 
-  window.onclick = function(event) {
-    if (event.target == modal) {
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      checkbox.checked = false;
       modal.close();
+      console.log('Escape Key Pressed...');
+    }
+  });
+
+  window.onclick = function(event) {
+    if (event.target == modal ) {
+
+      checkbox.click();
+      modal.close();
+
     }
   }
 });

@@ -49,6 +49,8 @@
         width: 0;
     }
 
+
+
     &:has(input:checked)::before{
         rotate: 45deg;
         width: var(--x-width);

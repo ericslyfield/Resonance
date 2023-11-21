@@ -9,7 +9,7 @@
 */
 ?>
 
-<footer class="size-caption container">
+<footer class="container">
     <?php wp_footer() ?>
 </footer>
 

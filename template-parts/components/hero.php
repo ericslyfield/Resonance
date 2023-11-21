@@ -1,15 +1,16 @@
 <?php
 
-
 $tagline = get_bloginfo( 'description', 'display' );
 
     if ( $tagline || ! is_customize_preview() ) :
 ?>
 
+<p>Checkbox status: <span class="check-state">Listening...</span></p>
+
+
     <h1 class="size-h2 sans-serif bold hero__heading"><?php echo esc_html($tagline);?></h1>
 
     <?php endif; ?>
-
 
     <div class="size-body courier hero__subheading"> <?php esc_html( the_content() ) ?> </div>
     

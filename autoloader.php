@@ -11,7 +11,7 @@
  */
 
 spl_autoload_register( function( $class ) {
-    $file = __DIR__ . '/includes/' . $class . '.php' ;
+    $file = __DIR__ . '/functions/' . $class . '.php' ;
     if( file_exists( $file ) ){
         require $file;
     }
