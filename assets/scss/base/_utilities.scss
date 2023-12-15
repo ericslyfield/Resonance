@@ -46,11 +46,10 @@
     gap: var(--gap, 1rem);
 }
 
-
 .container{
     margin-inline: auto;
     padding-inline: inherit;
-    max-width: 100rem;
+    max-width: 80rem;
 }
 
 .reader-only{

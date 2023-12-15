@@ -1,27 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
 
   var modal = document.getElementById('modal');
-  let dialog = document.getElementsByTagName('dialog');
-  let status = document.querySelector('.check-state');
-  var checkbox = document.querySelector("input[name=checkbox]");
+  var checkbox = document.querySelector("input[name=menu-checkbox]");
 
-  function check() {
-    document.getElementById("checkbox").checked = true;
-}
-
-function uncheck() {
-    document.getElementById("checkbox").checked = false;
-}
 
   let escape = () => {console.log("esc...")};
 
   checkbox.addEventListener('change', function() {
       if (this.checked) {
-          check();
           modal.showModal();
           console.log('Menu Open');
       } else {
-          uncheck();
           modal.close();
           console.log('Menu Closed');
       }
@@ -36,9 +25,8 @@ function uncheck() {
   });
 
   window.onclick = function(event) {
-    if (event.target == modal ) {
-
-      checkbox.click();
+    if (event.target == window ) {
+      checkbox.checked = false;
       modal.close();
 
     }

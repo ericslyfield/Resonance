@@ -10,8 +10,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
 
 a{
@@ -65,7 +63,9 @@ body {
 
 ol, ul {
 	list-style: none;
+	padding: 0;
 }
+
 
 /* Quotes */
 

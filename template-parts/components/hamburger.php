@@ -1,8 +1,9 @@
-<label id="hamburger" class="hamburger">
-    <input id="checkbox" type="checkbox" name="checkbox">
+<label id="hamburger" class="hamburger" alt="hamburger menu" for="menu-checkbox">
+    <input type="checkbox" id="menu-checkbox" name="menu-checkbox">
+    <div class="reader-only">Menu<div>
 </label>
     
-<dialog id="modal" class="modal">
+<dialog id="modal" class="modal glass">
     <nav>
         <?php wp_nav_menu(
     

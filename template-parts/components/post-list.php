@@ -1,5 +1,8 @@
 <?php
 
+
+
+
 $args = array(
     'posts_per_page' => 10, //Limit to 10 most recent posts,
     'orderby' => 'DESC',
@@ -13,7 +16,7 @@ $args = array(
     while ($query->have_posts()) {
       $query->the_post();
 
-      echo '<div class="post-list__item flex">'; ?>
+      echo '<li class="post-list__item flex">'; ?>
 
           <a href="<?php the_permalink();?>" class="post-list__title bold"><?php the_title(); ?></a> 
 
@@ -38,7 +41,7 @@ $args = array(
 
         echo '</div>'; /* Metadaata Ends */ 
 
-      echo '</div>';
+      echo '</li>';
             ?>
 
             <?php

@@ -6,7 +6,8 @@ dialog#modal{
     position: relative;
     border: none;
     margin: auto;
-    padding: 0;
+    padding: 30px;
+    position: fixed;
 }
 .modal{
     z-index: 1;
@@ -14,10 +15,29 @@ dialog#modal{
     width: 420px;
 }
 
-.modal:not([open]) { 
-    display: none;
+// .modal:not([open]) { 
+//     display: none;
+// }
+
+// .modal:not([open]) { 
+//     display: none;
+// }
+
+.glass{
+    padding: 25px;
+    margin: 25px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
-dialog::backdrop{
-    backdrop-filter: blur(8px);
+.menu-header-navigation-container{
+    padding: 40px;
+}
+
+ul#mobile-menu{
+    font-size: large;
 }

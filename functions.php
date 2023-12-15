@@ -27,8 +27,8 @@ function resonance_footer_sidebar() {
         'id'            => 'footer-zone-one',
         'before_widget' => '<div id="%1$s" class="footer-zone-one %2$s">',
         'after_widget'  => '</div>',
-        'before_title'  => '<h3 class="footer__zone-one-title">',
-        'after_title'   => '</h3>',
+        'before_title'  => '<div class="footer__zone-one-title">',
+        'after_title'   => '</div>',
     ) );
 
     register_sidebar( array(
@@ -36,8 +36,8 @@ function resonance_footer_sidebar() {
         'id'            => 'footer-zone-two',
         'before_widget' => '<div id="%1$s" class="footer-zone-two %2$s">',
         'after_widget'  => '</div>',
-        'before_title'  => '<h3 class="footer__zone-two-title">',
-        'after_title'   => '</h3>',
+        'before_title'  => '<div class="footer__zone-two-title">',
+        'after_title'   => '</div>',
     ) );
 
     register_sidebar( array(
@@ -45,8 +45,8 @@ function resonance_footer_sidebar() {
         'id'            => 'footer-zone-three',
         'before_widget' => '<div id="%1$s" class="footer-zone-three %2$s">',
         'after_widget'  => '</div>',
-        'before_title'  => '<h3 class="footer__zone-three-title">',
-        'after_title'   => '</h3>',
+        'before_title'  => '<div class="footer__zone-three-title">',
+        'after_title'   => '</div>',
     ) );
 
     register_sidebar( array(
@@ -54,8 +54,8 @@ function resonance_footer_sidebar() {
         'id'            => 'footer-zone-four',
         'before_widget' => '<div id="%1$s" class="footer-zone-four %2$s">',
         'after_widget'  => '</div>',
-        'before_title'  => '<h3 class="footer__zone-three-title">',
-        'after_title'   => '</h3>',
+        'before_title'  => '<div class="footer__zone-three-title">',
+        'after_title'   => '</div>',
     ) );
 
     };
