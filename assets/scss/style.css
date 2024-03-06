@@ -200,15 +200,74 @@ body {
   font-size: var(--size-300);
 }
 
+.gothic {
+  font-family: "Gothic A1", sans-serif;
+}
+
+.sans-serif {
+  font-family: "Gothic A1", sans-serif;
+}
+
+.serif {
+  font-family: georgia, times, serif;
+}
+
+.code {
+  font-family: Consolas, monaco, monospace;
+}
+
+.courier {
+  font-family: "Courier Next", courier, monospace;
+}
+
+.helvetica {
+  font-family: "helvetica neue", helvetica, sans-serif;
+}
+
+.avenir {
+  font-family: "avenir next", avenir, sans-serif;
+}
+
+.athelas {
+  font-family: athelas, georgia, serif;
+}
+
+.georgia {
+  font-family: georgia, serif;
+}
+
+.times {
+  font-family: times, serif;
+}
+
+.bodoni {
+  font-family: "Bodoni MT", serif;
+}
+
+.calisto {
+  font-family: "Calisto MT", serif;
+}
+
+.garamond {
+  font-family: garamond, serif;
+}
+
+.baskerville {
+  font-family: baskerville, serif;
+}
+
 /**********************
 * Browser Reset Rules *
 ***********************/
 /* https://andy-bell.co.uk/a-modern-css-reset/  */
 /* Box sizing rules */
-*,
+html {
+  box-sizing: border-box;
+}
+
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 a {
@@ -284,10 +343,6 @@ picture {
   display: block;
   width: 100%;
   max-width: 100vw;
-}
-
-p {
-  width: 100%;
 }
 
 /* Forms */
@@ -548,7 +603,7 @@ select {
 .credits {
   grid-column: 1/13;
   width: 100%;
-  justify-self: center;
+  text-align: center;
 }
 .credits .site-credits__copyright,
 .credits .site-credits__separator,

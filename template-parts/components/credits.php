@@ -6,6 +6,6 @@
             <?php echo 'ø'; ?>
         </div>   
         <div class="site-credits__links">
-            <?php echo 'privacy policy'; ?>
+            <?php echo 'Privacy Policy'; ?>
         </div>    
 </div>
