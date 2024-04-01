@@ -8,5 +8,4 @@
 
 get_header();
 ?>
-
-jgkgmhgfhg
+<p> MINIMAL PAGE TEMPLATE</p>

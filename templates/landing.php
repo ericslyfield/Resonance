@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Landing (Standard)
+ * Template Name: Landing Page (Standard)
  * Template Post Type: post, page
  *
  * @package Resonance
@@ -18,8 +18,17 @@
     };
 ?>
 
-<main id="landing" class="grid container">
-    <?php get_template_part( 'template-parts/page/landing' )?>
+<main id="landing-page" class="grid container">
+
+<?php
+// get_template_part( 'parts/components/header' );
+get_template_part( 'parts/components/hero' ); 
+get_template_part( 'parts/components/post-list' );
+// get_template_part( 'parts/components/footer' );
+get_template_part( 'parts/components/credits' );
+
+?>
+
 </main>
 
-<?php get_footer();?>
+<?php get_footer();?>   

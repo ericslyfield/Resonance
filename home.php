@@ -13,7 +13,7 @@
 
     <article id="blog-content" class="container">   
         <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-            <?php get_template_part( 'template-parts/post/format', get_post_format()); ?>
+            <?php get_template_part( 'parts/post/format', get_post_format()); ?>
             
         </div>
     </article>

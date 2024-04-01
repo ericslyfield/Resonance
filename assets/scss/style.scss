@@ -31,7 +31,9 @@ Tags: blog, portfolio, minimal,
 * SCSS Dependencies *
 ********************/
 
-// Loaads Index
+// Loads Index
+
+@use 'custom';
 
 @use 'abstracts';
 @use 'vendors';
