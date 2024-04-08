@@ -26,6 +26,10 @@ Tags: blog, portfolio, minimal,
 /********************
 * SCSS Dependencies *
 ********************/
+.global-nav {
+  grid-column: 2/12;
+}
+
 /* Hover */
 /* Blur */
 .blur {
@@ -393,17 +397,14 @@ select {
 }
 .grid .hero__heading {
   grid-column: 2/12;
-  grid-row: 2;
   z-index: 100;
   justify-self: center;
 }
 .grid .hero__subheading {
   grid-column: 2/12;
-  grid-row: 3;
 }
 .grid .hero__thumbnail {
-  grid-column: 1/13;
-  grid-row: 1;
+  grid-column: 2/12;
   width: 100%;
   aspect-ratio: 16/9 auto;
 }
@@ -792,34 +793,6 @@ ul#mobile-menu {
   grid-row: 1/2;
 }
 
-/*  
-Theme Name: Resonance
-Theme URI: https://ericslyfield.com/themes/ericslyfieldcom
-Description: A Portfolio Theme...
-Author: Eric Slyfield
-Author URI: https://ericslyfield.com
-Template: Null
-Version: 1.0.1
-License: GNU General Public License v2 or Later
-License URI: http://www.gnu.org/licenses/gpi-2.0.html
-Tags: blog, portfolio, minimal,
-*/
-/********************
-* Table of Contents *
-********************/
-/*
-
-1. Abstracts
-2. Base
-3. Components
-4. Layout
-5. Pages
-6. Vendors
-
-*/
-/********************
-* SCSS Dependencies *
-********************/
 #blog-content {
   padding: 50px 0;
   background: hsl(var(--color-medium));

@@ -18,6 +18,8 @@ function my_theme_styles() {
     wp_enqueue_style( 'dashicons' );
     }
 
+// Enables Widget / Sidebar Support
+
 add_theme_support( 'widgets' );
 
 
@@ -60,6 +62,18 @@ function resonance_footer_sidebar() {
 
     };
     add_action( 'widgets_init', 'resonance_footer_sidebar' ); // Calls Sidebar Function
+
+    // Register Block Template Support for Classic Themes
+
+    add_action( 'after_setup_theme', 'add_block_template_part_support' );
+
+    function add_block_template_part_support() {
+
+        add_theme_support( 'block-template-parts' );
+        
+    }
+
+    add_theme_support( 'wp-block-styles' );
 
 ?>
 

@@ -32,13 +32,12 @@ Tags: blog, portfolio, minimal,
 ********************/
 
 // Loads Index
-
-@use 'custom';
-
+@use 'parts';
 @use 'abstracts';
 @use 'vendors';
 @use 'base';
 @use 'layout';
+
 @use 'components';
 @use 'pages';
 @use 'themes';

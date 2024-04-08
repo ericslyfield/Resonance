@@ -22,11 +22,15 @@
 
 <?php
 // get_template_part( 'parts/components/header' );
+echo '<nav class="global-nav">';
+block_template_part( 'header' );
+echo '</nav>';
+
 get_template_part( 'parts/components/hero' ); 
 get_template_part( 'parts/components/post-list' );
 // get_template_part( 'parts/components/footer' );
-get_template_part( 'parts/components/credits' );
-
+// get_template_part( 'parts/components/credits' );
+block_template_part( 'footer' );
 ?>
 
 </main>
