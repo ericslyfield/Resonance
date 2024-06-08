@@ -3,4 +3,4 @@ ____
 
 **Resonance** is a full-featured ~~"classic"~~ hybrid wordpress theme.
 
-This theme makes use of the "Templates" and "Template Parts" information architechture.
+This theme uses both classic PHP architecture and WordPress's newer Block Template Parts and styling.

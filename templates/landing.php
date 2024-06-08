@@ -8,8 +8,6 @@
  get_header();
 ?>
 
-<body <?php body_class(); ?> >
-
 <?php 
     if (function_exists ( 'wp_body_open' ) ){
         wp_body_open();
@@ -18,7 +16,15 @@
     };
 ?>
 
-<main id="landing-page" class="grid container">
+<main class="grid container">
+
+<div id="blotter-text">Bloop BLOOP!</div>
+<div id="blotter-container"></div>
+
+
+
+</body>
+</html>
 
 <?php
 // get_template_part( 'parts/components/header' );
