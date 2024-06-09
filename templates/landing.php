@@ -21,8 +21,6 @@
 <div id="blotter-text">Bloop BLOOP!</div>
 <div id="blotter-container"></div>
 
-
-
 </body>
 </html>
 
