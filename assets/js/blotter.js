@@ -25,8 +25,8 @@ material.uniforms.uAnimateNoise.value = 0.3;
 // Function to update animation values
 function updateAnimation() {
   // Update animation values here
-  material.uniforms.uOffset.value += 0.001; // Example: Increase uOffset value over time
-  material.uniforms.uRotation.value += 0.05; // Example: Increase uRotation value over time
+  material.uniforms.uOffset.value += 0.0002; // Example: Increase uOffset value over time
+  material.uniforms.uRotation.value += 0.0001; // Example: Increase uRotation value over time
   // You can update other animation values similarly
   
   // Request next animation frame
@@ -42,14 +42,15 @@ var blotter = new Blotter(material, {
 
 // Apply to element
 let scope = blotter.forText(text);
-let elem = document.getElementById('blotter-container');
-scope.appendTo(elem);
+let container = document.getElementById('blotter-container');
+scope.appendTo(container);
 
+document.onmousemove = moveIt;
+function moveIt(event) {
 
+    material.uniforms.uRotation.value = (event.clientY * .1);
+    material.uniforms.uOffset.value = (event.clientY * .0001);
 
-// // Apply effect to header
-// var elem = document.getElementById("blotter-header");
-// var scope = blotter.forText(elem);
-// scope.appendTo(elem);
+}
 
 });
