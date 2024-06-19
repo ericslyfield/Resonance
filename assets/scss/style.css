@@ -388,6 +388,14 @@ select {
 /******************
 * Utility Classes *
 *******************/
+canvas {
+  position: relative;
+}
+
+div#blotter-container {
+  position: relative;
+}
+
 .grid {
   display: grid;
   margin: 0 auto;
@@ -399,6 +407,9 @@ select {
   grid-column: 2/12;
   z-index: 100;
   justify-self: center;
+  text-align: center;
+  max-width: 350px;
+  line-height: 4.5rem;
 }
 .grid .hero__subheading {
   grid-column: 2/12;
