@@ -18,8 +18,6 @@ $tagline = get_bloginfo( 'description', 'display' );
             echo str_ireplace(["Resonate"], " ","The Things We Make Should Resonate");
         };
         
-
-    
 ?>
 
     <h1 class="size-h2 sans-serif bold hero__heading canvas-wrap"><?php echo esc_html(print_cta());?><div id="blotter-container"></div></h1>

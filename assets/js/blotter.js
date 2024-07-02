@@ -11,7 +11,7 @@ const text = new Blotter.Text("Resonate", {
   paddingTop: 0,
   paddingLeft: 50,
   paddingRight: 50,
-  paddingBottom: 50,
+  paddingBottom: 0,
   fill: '#000'
 });
 
@@ -23,13 +23,13 @@ var material = new Blotter.ChannelSplitMaterial();
 material.uniforms.uOffset.value = 0.017;
 material.uniforms.uRotation.value = 90.0;
 material.uniforms.uApplyBlur.value = 1.0;
-material.uniforms.uAnimateNoise.value = 0.2;
+material.uniforms.uAnimateNoise.value = 0.0;
 
 // Function to update animation values
 function updateAnimation() {
   // Update animation values here
-  material.uniforms.uOffset.value += 0.0002; // Example: Increase uOffset value over time
-  material.uniforms.uRotation.value += 0.0003; // Example: Increase uRotation value over time
+  material.uniforms.uOffset.value += 0.0001; // Example: Increase uOffset value over time
+  material.uniforms.uRotation.value += 0.145; // Example: Increase uRotation value over time
   // You can update other animation values similarly
   
   // Request next animation frame
@@ -79,7 +79,7 @@ function moveIt(event) {
     return; // Exit if event type is neither touchstart nor pointermove
   }
 
-    material.uniforms.uRotation.value = (event.clientY * .1);
+    material.uniforms.uRotation.value = (event.clientY * .2);
     material.uniforms.uOffset.value = (event.clientY * .0003);
 
 }

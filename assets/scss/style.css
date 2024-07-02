@@ -404,7 +404,9 @@ div#blotter-container {
   grid-auto-rows: auto;
 }
 .grid .hero__heading {
-  grid-column: 2/12;
+  grid-column: 2/6;
+  grid-row: 2/3;
+  grid-column: 1/7;
   z-index: 100;
   justify-self: center;
   text-align: center;
@@ -412,10 +414,14 @@ div#blotter-container {
   line-height: 4.5rem;
 }
 .grid .hero__subheading {
-  grid-column: 2/12;
+  grid-column: 2/6;
+  grid-row: 3/3;
+  z-index: 100;
+  color: cadetblue;
 }
 .grid .hero__thumbnail {
-  grid-column: 2/12;
+  grid-column: 4/12;
+  grid-row: 2/4;
   width: 100%;
   aspect-ratio: 16/9 auto;
 }
