@@ -16,27 +16,24 @@
     };
 ?>
 
-<main class="grid container">
-
-<div id="blotter-text"></div>
-
-
-</body>
-</html>
+<main class="grid container bg-medium">
 
 <?php
-// get_template_part( 'parts/components/header' );
 echo '<nav class="global-nav">';
 block_template_part( 'header' );
 echo '</nav>';
 
 get_template_part( 'parts/components/hero' );
 get_template_part( 'parts/components/post-list' );
-// get_template_part( 'parts/components/footer' );
-// get_template_part( 'parts/components/credits' );
+
 block_template_part( 'footer' );
+get_template_part( 'parts/components/credits' );
 ?>
 
 </main>
 
 <?php get_footer();?>   
+
+</body>
+</html>
+

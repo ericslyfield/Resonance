@@ -8,18 +8,13 @@
 
 <?php get_header(); ?>
 
-<?php if (have_posts()) : 
-    while( have_posts() ): the_post(); ?>
+<!-- <main class="grid container"> -->
 
-    <article id="blog-content" class="container">   
-        <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-            <?php get_template_part( 'parts/post/format', get_post_format()); ?>
-            
-        </div>
+    <article id="blog-content" class="grid container">   
+    <?php get_template_part( 'parts/page/landing' ); ?>
     </article>
 
-<?php endwhile; endif; ?>
-
+<!-- </main> -->
 
 <?php get_footer();?>
 

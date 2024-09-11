@@ -4,13 +4,13 @@
 
 
 $args = array(
-    'posts_per_page' => 10, //Limit to 10 most recent posts,
-    'orderby' => 'DESC',
+    'posts_per_page' => 10, // Limit to 10 most recent posts,
+    'orderby' => 'DESC', // Sort posts with most recent at the top
   );
 
-  $query = new WP_Query($args);
+$query = new WP_Query($args); 
 
-  echo '<div class="post-list size-body uppercase courier">';
+  echo '<div class="post-list size-body courier uppercase">';
   
   if ($query->have_posts()){
     while ($query->have_posts()) {
@@ -19,6 +19,8 @@ $args = array(
       echo '<li class="post-list__item flex">'; ?>
 
           <a href="<?php the_permalink();?>" class="post-list__title bold"><?php the_title(); ?></a> 
+
+          
 
           <?php /* Title */ 
 

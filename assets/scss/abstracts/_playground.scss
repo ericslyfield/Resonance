@@ -1,0 +1,33 @@
+.hero__container{
+    grid-column: 2 / 12;
+    background:#FFF;
+}
+
+
+.grid .hero__thumbnail img{
+    opacity:0.4;
+}
+
+.grid .hero__thumbnail img:hover{
+    opacity: 1.0;
+}
+
+.wp-block-group {
+    grid-column: 2 / 12;
+}
+
+@media screen and (max-width: 960px){
+    .card{
+        display: block;
+        margin: 0 auto; /*align horizontal auto*/
+    }
+}
+
+#blotter-container canvas {
+    display: block; /* Prevent margin collapse and overflow issues */
+}
+
+// body {
+//     overflow-x: hidden;
+// }
+

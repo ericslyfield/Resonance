@@ -12,15 +12,17 @@ $tagline = get_bloginfo( 'description', 'display' );
         $sentence = explode( " ", $string);
         $shortened = array_splice( $sentence, -1 );
         
-        echo implode( " ", $shortened);
+        // echo implode( " ", $shortened);
 
         function print_cta(){
-            echo str_ireplace(["Resonate"], " ","The Things We Make Should Resonate");
+            echo str_ireplace([""], " ",""); // Word To replace, Separator, Full String
         };
         
 ?>
 
-    <h1 class="size-h2 sans-serif bold hero__heading canvas-wrap"><?php echo esc_html(print_cta());?><div id="blotter-container"></div></h1>
+<div class="hero__container container grid">
+
+    <h1 class="hero__heading canvas-wrap size-h2 sans-serif bold "><?php echo esc_html(print_cta());?><div id="blotter-container"></div></h1>
 
 
     <?php endif; ?>
@@ -32,3 +34,5 @@ $tagline = get_bloginfo( 'description', 'display' );
     <?php if ( has_post_thumbnail() ): ?>
         <div class="thumbnail hero__thumbnail"> <?php the_post_thumbnail('large'); ?> </div>
     <?php endif; ?> <!-- Thumbnail -->
+
+</div>
