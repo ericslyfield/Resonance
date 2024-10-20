@@ -1,6 +1,6 @@
 <?php
 /**
-* Main Template File
+*  Default Template File (Index)
 * 
  * This is the most generic template file in a WordPress theme and one of the
  * two required files for a theme (the other being style.css).
@@ -16,10 +16,12 @@
 get_header(); 
 ?>
 
-<?php if ( is_home() && ! is_front_page() && ! empty( single_post_title( '', false ) ) ) : ?>
+<?php 
+// If the page is the "front page/home page" and (&&) not (!) empty...
+if ( is_home() && ! is_front_page() && ! empty( single_post_title( '', false ) ) ) : ?>
 	<header class="page-header alignwide">
 		<h1 class="page-title"><?php single_post_title(); ?></h1>
-	</header><!-- .page-header -->
+	</header>
 <?php endif; ?>
 
 <?php
@@ -37,7 +39,7 @@ get_header();
     endif;
 ?>
  
-<main id="main-content"> Silence is golden.</main>
+<main id="main-content"> Silence is Golden.</main>
 
 <footer>
     <?php get_footer();?>

@@ -1,32 +1,30 @@
 document.addEventListener("DOMContentLoaded", function() {
-
-    let size = Math.min(Math.min(window.innerWidth * 0.13, 50), 120);
-    let padding = Math.min(Math.max(window.innerWidth * 0.08, 50), 150);
+    let size = Math.min(Math.min(window.innerWidth * 0.25, 50), 300);
+    let padding = Math.min(Math.max(window.innerWidth * 0.10, 25), 150);
 
     // Define text style
-    const text = new Blotter.Text("Resonate", {
+    const text = new Blotter.Text("Eric Slyfield", {
         family: "'Gothic A1', sans-serif",
         size: size,
-        weight: 700,
-        paddingTop: 0,
-        paddingLeft: 50,
-        paddingRight: 50,
-        paddingBottom: 0,
-        fill: '#000'
+        weight: 900,
+        paddingTop: padding,
+        paddingLeft: 0,
+        paddingRight: 0,
+        paddingBottom: padding,
+        fill: '#ffffffA3'
     });
 
     // Initialize Blotter.js
     var material = new Blotter.ChannelSplitMaterial();
 
-    // Material Options
-    material.uniforms.uOffset.value = 0.017;
-    material.uniforms.uRotation.value = 90.0;
+    // Initial Material Options for a plain text effect
+    material.uniforms.uOffset.value = 0.0; // Start with no offset
+    material.uniforms.uRotation.value = 0.0; // No rotation initially
     material.uniforms.uApplyBlur.value = 1.0;
     material.uniforms.uAnimateNoise.value = 0.0;
 
     // Function to update animation values
     function updateAnimation() {
-        // Request next animation frame
         requestAnimationFrame(updateAnimation);
     }
 
@@ -43,57 +41,22 @@ document.addEventListener("DOMContentLoaded", function() {
     let container = document.getElementById('blotter-container');
     scope.appendTo(container);
 
-    window.addEventListener("resize", () => {
-        let newSize = Math.min(Math.max(window.innerWidth * 0.13, 50), 120);
-        let newPadding = Math.min(Math.max(window.innerWidth * 0.08, 50), 150);
-
-        if (newSize !== size || newPadding !== padding) {
-            size = newSize;
-            padding = newPadding;
-            container.innerHTML = "";
-            createBlotter(size, container, padding);
-        }
-    });
-
     let lastScrollTop = 0;
-    let isTouching = false;
-    let touchStartY = 0;
 
-    function updateEffect(value) {
-        material.uniforms.uRotation.value = value * 0.2;
-        material.uniforms.uOffset.value = value * 0.0003;
+    function updateEffect(scrollDelta) {
+        // Make the effect more pronounced based on the scroll delta
+        material.uniforms.uRotation.value += scrollDelta * 0.175; // Adjust rotation
+        material.uniforms.uOffset.value += scrollDelta * 0.001; // Adjust offset
     }
 
     function onScroll(event) {
-        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        updateEffect(scrollTop - lastScrollTop);
+        let scrollTop = window.scrollY || document.documentElement.scrollTop;
+        let scrollDelta = scrollTop - lastScrollTop;
+        updateEffect(scrollDelta);
         lastScrollTop = scrollTop;
     }
 
-    function onTouchStart(event) {
-        if (event.touches.length > 0) {
-            touchStartY = event.touches[0].clientY;
-            isTouching = true;
-        }
-    }
-
-    function onTouchMove(event) {
-        if (isTouching && event.touches.length > 0) {
-            let touchY = event.touches[0].clientY;
-            let deltaY = touchY - touchStartY;
-            updateEffect(deltaY);
-            touchStartY = touchY;
-        }
-    }
-
-    function onTouchEnd(event) {
-        isTouching = false;
-    }
-
     window.addEventListener("scroll", onScroll);
-    document.addEventListener("touchstart", onTouchStart);
-    document.addEventListener("touchmove", onTouchMove);
-    document.addEventListener("touchend", onTouchEnd);
 
     // Get the canvas element
     const canvas = document.getElementById('blotter-container');
@@ -105,8 +68,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Create a gradient for the inside edge effect
     const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
-    gradient.addColorStop(0, '#ffffff'); // Start with white
-    gradient.addColorStop(1, '#000000'); // End with black or desired color
+    gradient.addColorStop(0, '#000000'); // Start with white
+    gradient.addColorStop(1, '#ffffff'); // End with black or desired color
 
     // Use the gradient to fill a rectangle covering the canvas
     ctx.fillStyle = gradient;

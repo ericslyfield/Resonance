@@ -1,6 +1,6 @@
 .hero__container{
     grid-column: 2 / 12;
-    background:#FFF;
+    border-radius: 15px;
 }
 
 
@@ -27,7 +27,11 @@
     display: block; /* Prevent margin collapse and overflow issues */
 }
 
+canvas {
+    width: 100%;
+    object-fit: contain;
+}
+
 // body {
 //     overflow-x: hidden;
 // }
-
