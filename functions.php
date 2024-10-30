@@ -5,14 +5,17 @@
 * @package Resonance
 */
 
-require( 'autoloader.php' );
+require_once 'autoloader.php';
 
-$Styling = new Styling;
-$Options = new Options;
+new StylesAndSettings;
+new Options;
 
-if (is_page( 'Contact' )){
-    require_once( 'assets/ajax/filter.php' );
-};
+function include_contact_ajax() {
+    if (is_page( 'Contact' )){
+        require_once( 'assets/ajax/filter.php' );
+    };
+}
+add_action('wp', 'include_contact_ajax');
 
 function my_theme_styles() {
     wp_enqueue_style( 'dashicons' );
@@ -56,7 +59,7 @@ function resonance_footer_sidebar() {
         'id'            => 'footer-zone-four',
         'before_widget' => '<div id="%1$s" class="footer-zone-four %2$s">',
         'after_widget'  => '</div>',
-        'before_title'  => '<div class="footer__zone-three-title">',
+        'before_title'  => '<div class="footer__zone-four-title">',
         'after_title'   => '</div>',
     ) );
 
@@ -65,15 +68,13 @@ function resonance_footer_sidebar() {
 
     // Register Block Template Support for Classic Themes
 
-    add_action( 'after_setup_theme', 'add_block_template_part_support' );
+// Register Block Template Support for Classic Themes
+function theme_setup() {
+    add_theme_support('block-template-parts');
+    add_theme_support('wp-block-styles');
+}
+add_action('after_setup_theme', 'theme_setup');
 
-    function add_block_template_part_support() {
-
-        add_theme_support( 'block-template-parts' );
-        
-    }
-
-    add_theme_support( 'wp-block-styles' );
 
 ?>
 

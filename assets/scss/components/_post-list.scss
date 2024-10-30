@@ -1,12 +1,11 @@
 .grid{
     .post-list{
-        grid-column: 2 / 12;
+        grid-column: 3 / 11;
         display: block;
         width: 100%;
     }
 
     .post-list__item{
-        padding: 2rem 1rem;
         border-radius: 15px;
         &:hover{
             box-shadow: 0 0 35px green;

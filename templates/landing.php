@@ -20,7 +20,7 @@
 
 <?php
 
-echo '<nav class="global-nav">';
+echo '<nav class="global-nav sticky">';
 block_template_part( 'header' );
 echo '</nav>';
 

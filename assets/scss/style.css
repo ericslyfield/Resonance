@@ -414,6 +414,13 @@ body {
   max-width: 85rem;
 }
 
+.sticky {
+  top: 0;
+  position: sticky;
+  top: 100px;
+  z-index: 1000;
+}
+
 .reader-only {
   position: absolute;
   width: 1px;
@@ -464,7 +471,6 @@ div#blotter-container {
   grid-column: 2/12;
   grid-row: 1/1;
   width: 100%;
-  aspect-ratio: 16/9 auto;
 }
 
 .hero__thumbnail > img {
@@ -664,12 +670,11 @@ ul#mobile-menu {
 }
 
 .grid .post-list {
-  grid-column: 2/12;
+  grid-column: 3/11;
   display: block;
   width: 100%;
 }
 .grid .post-list__item {
-  padding: 2rem 1rem;
   border-radius: 15px;
 }
 .grid .post-list__item:hover {
